@@ -425,7 +425,31 @@ def manual():
     d.save(DOCS/'HUONG_DAN_SU_DUNG.docx')
 
 
+def finalize_repository_links():
+    """Update the approved report with the repository published in Phase 7."""
+    replacements = {
+        'Việc công bố link GitHub sẽ thực hiện sau kiểm tra secret ở Phase 7.':
+            'Data + Source App được lưu tại GitHub: https://github.com/phi1411/neo4j.',
+        'Việc triển khai nhiều người dùng hoặc công bố GitHub cần các bước vận hành và audit riêng.':
+            'Việc triển khai nhiều người dùng cần các bước vận hành và audit riêng.',
+        'Hai tài liệu Word và source được chuẩn bị cho bài nộp; link GitHub còn chờ Phase 7.':
+            'Hai tài liệu Word và source được chuẩn bị cho bài nộp. Repository: https://github.com/phi1411/neo4j.',
+        'Link GitHub sẽ được bổ sung sau audit Phase 7.':
+            'Repository: https://github.com/phi1411/neo4j.',
+    }
+    for name in ['TONG_QUAN_DU_AN.docx','HUONG_DAN_SU_DUNG.docx']:
+        path = DOCS/name
+        d = Document(path)
+        for p in d.paragraphs:
+            if any(old in p.text for old in replacements):
+                text = p.text
+                for old,new in replacements.items(): text = text.replace(old,new)
+                p.text = text
+        d.save(path)
+
+
 if __name__ == '__main__':
     overview()
     manual()
+    finalize_repository_links()
     print(json.dumps({'created':['docs/TONG_QUAN_DU_AN.docx','docs/HUONG_DAN_SU_DUNG.docx'],'nodes':44,'relationships':79},ensure_ascii=False))

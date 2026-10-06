@@ -4,7 +4,7 @@
 
 Dự án môn NoSQL mô hình hoá kiến thức về bảy loại tứ giác bằng Neo4j. Ứng dụng Flask tiếng Việt tra cứu định nghĩa, tính chất kế thừa, dấu hiệu nhận biết và hiển thị graph trên web. Data + Source App đã kiểm thử thực tế; hai tài liệu Word ở `docs/`.
 
-GitHub chưa công bố trong Phase 6. Link thật sẽ bổ sung sau kiểm tra secret ở Phase 7.
+Repository: [phi1411/neo4j](https://github.com/phi1411/neo4j). Kiểm tra cuối và các mục cần điền trước khi nộp ở [FINAL_CHECK.md](docs/FINAL_CHECK.md).
 
 ## 2. Mục tiêu
 
@@ -126,7 +126,7 @@ Database gồm `shapes.json`, `properties.json`, `conditions.json`, `relationshi
 
 Cấu hình đã chứng minh hoạt động: Windows, Python 3.13.5, Neo4j Desktop 2, Neo4j Enterprise 2026.09.0. Chưa xác nhận mọi phiên bản Neo4j cũ; một số validation dùng cú pháp Cypher mới.
 
-Cần browser bật JavaScript, quyền cài gói Python, database `quadrilateral` online. Internet cần lúc tải/cài; demo dùng static local cùng Flask/Neo4j. Source mới: tải ZIP và mở terminal ở thư mục có `run.py`, hoặc sau khi có link GitHub thật:
+Cần browser bật JavaScript, quyền cài gói Python, database `quadrilateral` online. Internet cần lúc tải/cài; demo dùng static local cùng Flask/Neo4j. Source mới: tải ZIP và mở terminal ở thư mục có `run.py`, hoặc clone repository:
 
 ```powershell
 git clone https://github.com/phi1411/neo4j.git quadrilateral-neo4j
@@ -295,15 +295,17 @@ Tài liệu nộp: [TONG_QUAN_DU_AN.docx](docs/TONG_QUAN_DU_AN.docx), [HUONG_DAN
 | Phase 3 | 91 pytest = 69 integration + 22 unit; 38 HTTP | [PHASE_3_RESULTS](docs/PHASE_3_RESULTS.json) |
 | Phase 5 | 92 pytest; 41 HTTP + 8 ca lỗi/search; 78 UI; 20/15 database | [Báo cáo Phase 5](docs/BAO_CAO_PHASE_5.md) |
 | Môi trường sạch Phase 5 | Source copy/venv mới: 92 pytest, 41 HTTP; seed tạo thêm 0 node/cạnh | [FRESH_START](docs/PHASE_5_FRESH_START.json) |
+| Phase 7 | 92 pytest, 41 HTTP, 11 kiểm tra UI, 20 validation/15 query | [FINAL_CHECK](docs/FINAL_CHECK.md) |
+| Clone GitHub Phase 7 | Clone thật qua mạng, venv mới, chỉ requirements.txt: 92 pytest, 41 HTTP; 20 validation/15 query | [FRESH_START](docs/PHASE_7_FRESH_START.json) |
 
-Integration đọc Neo4j thật; không kết nối thì fail, không skip sang mock. Ca unavailable dùng cổng không listen, không tắt instance. Fresh-start dùng database hiện có, không reset và chưa clone remote qua mạng.
+Integration đọc Neo4j thật; không kết nối thì fail, không skip sang mock. Ca unavailable dùng cổng không listen, không tắt instance. Phase 5 kiểm tra source copy; Phase 7 kiểm tra bản clone GitHub thật. Cả hai dùng database Neo4j hiện có, không phải database mới hoàn toàn; Phase 7 chỉ đọc dữ liệu, không seed lại.
 
 ```powershell
 .\.venv\Scripts\python.exe -m pytest -q --junitxml=docs/PHASE_5_PYTEST.xml
 .\.venv\Scripts\python.exe scripts/http_smoke.py --report docs/PHASE_5_HTTP_RESULTS.json
 ```
 
-Giữ server cho HTTP smoke; đổi cổng thì thêm `--base-url http://127.0.0.1:5002`. Cờ `--report` giữ báo cáo cũ. `scripts/phase5.py preflight/postflight` đọc Neo4j và so baseline, `audit` quét source công khai, `finalize` tổng hợp bằng chứng đã có chứ không chạy lại browser. Phase 7 cần kiểm tra staging/commit trước GitHub.
+Giữ server cho HTTP smoke; đổi cổng thì thêm `--base-url http://127.0.0.1:5002`. Cờ `--report` giữ báo cáo cũ. `scripts/phase5.py preflight/postflight` đọc Neo4j và so baseline, `audit` quét source công khai, `finalize` tổng hợp bằng chứng đã có chứ không chạy lại browser. Phase 7 đã kiểm tra source, staging và lịch sử Git cục bộ trước khi push; xem [PHASE_7_AUDIT.json](docs/PHASE_7_AUDIT.json).
 
 ## 24. Hạn chế
 
@@ -315,8 +317,10 @@ Giữ server cho HTTP smoke; đổi cổng thì thêm `--base-url http://127.0.0
 
 ## 25. Hướng phát triển
 
-Bổ sung nguồn định lý theo quy tắc, mở rộng catalog với ID ổn định, đánh giá dấu hiệu từ dữ kiện và kiểm thử nhất quán khi thay taxonomy. Nếu so hiệu năng, cần workload/phương pháp đo riêng. Hoàn tất Phase 7 trước công bố Data + Source App.
+Bổ sung nguồn định lý theo quy tắc, mở rộng catalog với ID ổn định, đánh giá dấu hiệu từ dữ kiện và kiểm thử nhất quán khi thay taxonomy. Nếu so hiệu năng, cần workload/phương pháp đo riêng.
 
 ## 26. Tác giả / môn học
 
 Môn học: **NoSQL**. Trường, khoa, họ tên, MSSV, lớp, giảng viên, năm học được điền theo thông tin người thực hiện trước khi nộp; chưa có thông tin xác nhận để ghi cụ thể. Trang bìa DOCX dùng placeholder rõ ràng.
+
+Demo 7 phút: [DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md). Chuẩn bị trả lời giảng viên: [26 câu hỏi phản biện](docs/CAU_HOI_PHAN_BIEN.md).

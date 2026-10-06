@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "renderer": "Microsoft Word + bundled Poppler; packaged LibreOffice unavailable",
+  "documents": [
+    {
+      "file": "docs/TONG_QUAN_DU_AN.docx",
+      "pages": 24,
+      "sha256": "56e54438fc2f605662a23b53062af1c05990182b9882d9be3519836da70cf398"
+    },
+    {
+      "file": "docs/HUONG_DAN_SU_DUNG.docx",
+      "pages": 21,
+      "sha256": "82980a2e2d8efb62ef4aadc0dfeb654cb3b8766d665d0b6823a887d3cc587872"
+    }
+  ],
+  "total_pages": 45,
+  "changed_pages": [
+    "TONG_QUAN_DU_AN/page-01.png",
+    "TONG_QUAN_DU_AN/page-03.png",
+    "TONG_QUAN_DU_AN/page-04.png",
+    "TONG_QUAN_DU_AN/page-05.png",
+    "TONG_QUAN_DU_AN/page-06.png",
+    "TONG_QUAN_DU_AN/page-07.png",
+    "TONG_QUAN_DU_AN/page-08.png",
+    "TONG_QUAN_DU_AN/page-09.png",
+    "TONG_QUAN_DU_AN/page-10.png",
+    "TONG_QUAN_DU_AN/page-11.png",
+    "TONG_QUAN_DU_AN/page-12.png",
+    "TONG_QUAN_DU_AN/page-13.png",
+    "TONG_QUAN_DU_AN/page-14.png",
+    "TONG_QUAN_DU_AN/page-15.png",
+    "TONG_QUAN_DU_AN/page-16.png",
+    "TONG_QUAN_DU_AN/page-17.png",
+    "TONG_QUAN_DU_AN/page-18.png",
+    "TONG_QUAN_DU_AN/page-19.png",
+    "TONG_QUAN_DU_AN/page-20.png",
+    "TONG_QUAN_DU_AN/page-21.png",
+    "TONG_QUAN_DU_AN/page-22.png",
+    "TONG_QUAN_DU_AN/page-23.png",
+    "TONG_QUAN_DU_AN/page-24.png",
+    "HUONG_DAN_SU_DUNG/page-01.png",
+    "HUONG_DAN_SU_DUNG/page-02.png",
+    "HUONG_DAN_SU_DUNG/page-03.png",
+    "HUONG_DAN_SU_DUNG/page-04.png",
+    "HUONG_DAN_SU_DUNG/page-05.png",
+    "HUONG_DAN_SU_DUNG/page-06.png",
+    "HUONG_DAN_SU_DUNG/page-07.png",
+    "HUONG_DAN_SU_DUNG/page-08.png",
+    "HUONG_DAN_SU_DUNG/page-09.png",
+    "HUONG_DAN_SU_DUNG/page-10.png",
+    "HUONG_DAN_SU_DUNG/page-11.png",
+    "HUONG_DAN_SU_DUNG/page-12.png",
+    "HUONG_DAN_SU_DUNG/page-13.png",
+    "HUONG_DAN_SU_DUNG/page-14.png",
+    "HUONG_DAN_SU_DUNG/page-15.png",
+    "HUONG_DAN_SU_DUNG/page-16.png",
+    "HUONG_DAN_SU_DUNG/page-17.png",
+    "HUONG_DAN_SU_DUNG/page-18.png",
+    "HUONG_DAN_SU_DUNG/page-19.png",
+    "HUONG_DAN_SU_DUNG/page-20.png",
+    "HUONG_DAN_SU_DUNG/page-21.png"
+  ],
+  "visual_review": {
+    "pages_inspected": 45,
+    "overview_pages": 24,
+    "manual_pages": 21,
+    "resolution_dpi": 125,
+    "result": "No clipping, overlap, unreadable tables or missing images observed. Intentional cover placeholders remain."
+  },
+  "repository_url": "https://github.com/phi1411/neo4j"
+}

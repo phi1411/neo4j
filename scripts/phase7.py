@@ -45,10 +45,6 @@ def scan(files, password):
                 findings.append({'file':name,'part':part,'kind':'configured_password'})
             for kind,pattern in SECRETS.items():
                 for match in pattern.finditer(contents):
-                    # Intentionally invalid test-only URIs exercise rejection of
-                    # embedded authentication. They are not working credentials.
-                    if kind=='embedded_url_auth' and name=='tests/unit/test_env_security.py':
-                        continue
                     findings.append({'file':name,'part':part,'kind':kind,'line':contents.count('\n',0,match.start())+1})
             if re.search(r'[A-Za-z]:[\\/]+Users[\\/]+Admin',contents,re.I):
                 paths.append({'file':name,'part':part,'kind':'machine_path'})

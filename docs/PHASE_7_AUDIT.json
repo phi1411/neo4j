@@ -1,9 +1,9 @@
 {
   "status": "PASS",
-  "checked_at": "2026-10-06T17:35:42.860906+00:00",
-  "candidate_files": 157,
-  "staged_files": 157,
-  "history_commits_checked": 0,
+  "checked_at": "2026-10-06T17:46:17.243967+00:00",
+  "candidate_files": 162,
+  "staged_files": 12,
+  "history_commits_checked": 1,
   "gitignore_checks": 10,
   "required_public_files": 14,
   "findings": [],
@@ -23,7 +23,6 @@
       "file": "README.md",
       "part": "",
       "hits": {
-        "secret": 1,
         "neo4j_password": 1,
         "password": 3,
         "debug": 1
@@ -119,7 +118,9 @@
       "file": "docs/FINAL_CHECK.md",
       "part": "",
       "hits": {
-        "secret": 2
+        "secret": 3,
+        "password": 1,
+        "token": 1
       },
       "classification": "documentation_placeholder_or_test_evidence"
     },
@@ -170,15 +171,15 @@
       "part": "",
       "hits": {
         "neo4j_password": 17,
-        "secret": 10,
-        "password": 14,
+        "password": 15,
         "debug": 11,
         "print(": 13,
-        "token": 3,
+        "token": 4,
         "console.log": 3,
         "todo": 6,
         "temporary": 8,
         "fixme": 3,
+        "secret": 9,
         "test123": 2,
         "api_key": 2
       },
@@ -188,7 +189,6 @@
       "file": "docs/TONG_QUAN_DU_AN.docx",
       "part": "word/document.xml",
       "hits": {
-        "secret": 1,
         "debug": 1
       },
       "classification": "documentation_placeholder_or_test_evidence"
@@ -225,7 +225,7 @@
       "file": "scripts/build_phase6_docs.py",
       "part": "",
       "hits": {
-        "secret": 1,
+        "secret": 2,
         "debug": 2,
         "neo4j_password": 1,
         "password": 4,
