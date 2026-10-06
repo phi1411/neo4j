@@ -1,0 +1,7 @@
+{% extends 'base.html' %}{% from '_graph.html' import graph_panel %}{% block content %}
+<div class="page-intro compact"><p class="eyebrow">KHÁM PHÁ QUAN HỆ</p><h1>Graph tri thức tứ giác</h1><p class="lead">Chọn một hình và bán kính traversal để xem các node, cạnh và nội dung liên quan.</p></div>
+<form id="graph-form" class="panel inline-form"><label for="graph-shape">Hình trung tâm<select id="graph-shape" disabled><option>Đang tải…</option></select></label><label for="graph-depth">Độ sâu<select id="graph-depth"><option>1</option><option>2</option><option>3</option></select></label><button id="graph-load" class="button primary" type="submit" disabled>Tải lân cận</button><button id="graph-taxonomy" class="button" type="button">Xem taxonomy</button></form>
+<p class="muted">Lân cận gồm node trong bán kính đã chọn và mọi cạnh nội bộ giữa chúng. Có thể đi qua dấu hiệu nhận biết; đây không phải tập tổ tiên hoặc toàn bộ tính chất hiệu lực.</p>
+{{ graph_panel('explorer', 'Graph lân cận') }}
+<section class="panel"><h2>Đọc các relationship</h2><dl class="relationship-guide"><dt>IS_A</dt><dd>Loại hình → loại hình tổng quát.</dd><dt>HAS_PROPERTY</dt><dd>Loại hình → tính chất khai báo trực tiếp.</dd><dt>HAS_CONDITION</dt><dd>Loại hình kết luận → quy tắc nhận biết.</dd><dt>REQUIRES_SHAPE</dt><dd>Quy tắc → ngữ cảnh hình ban đầu.</dd><dt>REQUIRES_PROPERTY</dt><dd>Quy tắc → giả thiết bổ sung cần thỏa mãn.</dd></dl></section>
+{% endblock %}

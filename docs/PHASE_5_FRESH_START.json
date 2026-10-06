@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "copy": ".qa/phase5-clean",
+  "original_git_repository": false,
+  "ignore_checks": 5,
+  "copied_existing_venv": false,
+  "database_reset": false,
+  "pip_install": "PASS: new venv, only requirements.txt",
+  "pip_check": "PASS",
+  "phase2_actions": [
+    "connect",
+    "schema",
+    "build-seed",
+    "seed",
+    "finish"
+  ],
+  "pytest_passed": 92,
+  "http_passed": 41,
+  "real_server_port": 5002,
+  "real_browser_checks": "PHASE_5_UI_RESULTS.json",
+  "seed_script_identical": true,
+  "existing_database_reused": true,
+  "original_database_reset": false,
+  "first_seed_new_entities": 0,
+  "second_seed_new_entities": 0,
+  "gitignore_checks": "PASS: .env/.venv/__pycache__/.pytest_cache/.qa",
+  "temporary_directory_retained": true,
+  "temporary_directory_gitignored": true,
+  "auxiliary_servers_stopped": true,
+  "cleanup_note": "Automatic approval review blocked recursive QA cleanup and deletion of temporary login copies; no bypass attempted."
+}

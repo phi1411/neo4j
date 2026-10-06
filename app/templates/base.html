@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Graph tri thức về tứ giác, phân loại, tính chất và dấu hiệu nhận biết với Neo4j.">
+  <title>{{ title }} · Tứ giác & Neo4j</title>
+  <link rel="icon" href="{{ url_for('static', filename='favicon.svg') }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendor/vis-network/vis-network.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+  <script defer src="{{ url_for('static', filename='vendor/vis-network/vis-network.min.js') }}"></script>
+  <script defer src="{{ url_for('static', filename='js/graph.js') }}"></script>
+  <script defer src="{{ url_for('static', filename='js/app.js') }}"></script>
+</head>
+<body data-page="{{ page }}" {% if shape_id is defined %}data-shape-id="{{ shape_id }}"{% endif %}>
+  <a class="skip" href="#main">Đến nội dung</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="Tứ giác & Neo4j — trang tổng quan"><span class="brand-mark">◇</span><span>Tứ giác <small>& Neo4j</small></span></a>
+      <nav aria-label="Điều hướng chính">
+      {% for target,label,key in [('/', 'Tổng quan','dashboard'),('/shapes','Các loại tứ giác','shapes'),('/graph','Khám phá Graph','graph'),('/queries','Truy vấn Neo4j','queries'),('/about','Giới thiệu dự án','about')] %}
+        <a href="{{ target }}" {% if page==key or (key=='shapes' and page=='detail') %}aria-current="page"{% endif %}>{{ label }}</a>
+      {% endfor %}
+      </nav>
+    </div>
+  </header>
+  <div class="connection-bar"><span>BÀI TẬP MÔN NoSQL · GRAPH TRI THỨC</span><button id="connection" class="connection" type="button" title="Kiểm tra lại kết nối" aria-live="polite">Đang kiểm tra Neo4j…</button></div>
+  <main id="main" class="container">{% block content %}{% endblock %}</main>
+  <footer><span>Mô hình hoá – Tứ giác trong hình học phẳng với Neo4j</span><span>Neo4j + Flask · Dữ liệu được truy vấn trực tiếp</span></footer>
+  <noscript><p class="state error">Cần bật JavaScript để tải dữ liệu và hiển thị graph.</p></noscript>
+</body>
+</html>

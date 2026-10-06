@@ -1,0 +1,10 @@
+{% extends 'base.html' %}{% from '_graph.html' import graph_panel %}
+{% block content %}
+<div class="page-intro"><p class="eyebrow">MÔ HÌNH HOÁ KIẾN THỨC HÌNH HỌC</p><h1>Mô hình hoá – Tứ giác trong hình học phẳng với Neo4j</h1><p class="lead">Graph tri thức biểu diễn quan hệ phân loại, tính chất và dấu hiệu nhận biết của các loại tứ giác bằng Neo4j.</p><div class="actions"><a class="button primary" href="/shapes">Xem các loại tứ giác →</a><a class="button" href="/queries">Thử truy vấn Cypher</a></div></div>
+<section aria-label="Thống kê database"><div id="stats-state" class="state" role="status">Đang đọc thống kê từ Neo4j…</div><div id="stats" class="stats-grid"></div></section>
+<div class="section-intro"><div><p class="eyebrow">QUAN HỆ PHÂN LOẠI</p><h2>Một hình, nhiều đường kế thừa</h2></div><a href="/graph">Mở trang khám phá →</a></div>
+<p class="muted">IS_A đi từ loại hình đặc biệt tới loại hình tổng quát. Hình vuông kế thừa qua hai nhánh: hình chữ nhật và hình thoi.</p>
+{{ graph_panel('taxonomy', 'Graph phân loại · IS_A') }}
+<section class="panel explanation"><h2>Vì sao dùng Neo4j?</h2><div class="three-columns"><article><h3>Phân loại nhiều cấp</h3><p>Traversal qua IS_A tìm các tổ tiên mà không cần lưu lại mọi liên kết bắc cầu. Đa kế thừa của hình vuông được biểu diễn trực tiếp.</p></article><article><h3>Tính chất dùng chung</h3><p>Một Property có thể được nhiều hình sử dụng. Tổng hợp kế thừa và giao tập tính chất giúp so sánh các loại tứ giác.</p></article><article><h3>Giải thích bằng đường đi</h3><p>Đường đi từ Shape qua lớp khai báo tới Property cho biết tính chất đến từ đâu. Cypher diễn đạt rõ các quan hệ này.</p></article></div><p class="muted">SQL cũng có thể mô hình hoá bài toán bằng bảng liên kết và truy vấn đệ quy. Dự án minh hoạ cách biểu diễn quan hệ bằng graph, chưa đo so sánh hiệu năng.</p></section>
+<p class="convention"><strong>Quy ước:</strong> xét tứ giác lồi, không suy biến. Hình thang có <strong>đúng một</strong> cặp cạnh đối song song; nhánh hình bình hành tách riêng.</p>
+{% endblock %}

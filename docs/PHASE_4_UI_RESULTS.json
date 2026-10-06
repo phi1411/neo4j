@@ -1,0 +1,968 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-06T16:37:29.327Z",
+  "base_url": "http://127.0.0.1:5000",
+  "transport": "Real browser UI -> Flask API -> Neo4j",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "checks": [
+    {
+      "name": "dashboard_stats",
+      "status": "PASS",
+      "actual": [
+        "7",
+        "19",
+        "18",
+        "44",
+        "79"
+      ]
+    },
+    {
+      "name": "taxonomy_counts",
+      "status": "PASS",
+      "actual": [
+        "7",
+        "7"
+      ]
+    },
+    {
+      "name": "taxonomy_node_detail",
+      "status": "PASS",
+      "actual": "Hình vuông"
+    },
+    {
+      "name": "shapes_count",
+      "status": "PASS",
+      "actual": 7
+    },
+    {
+      "name": "search_Hình vuông",
+      "status": "PASS",
+      "actual": 1
+    },
+    {
+      "name": "search_hinh vuong",
+      "status": "PASS",
+      "actual": 1
+    },
+    {
+      "name": "search_VUONG",
+      "status": "PASS",
+      "actual": 1
+    },
+    {
+      "name": "search_khongtimthay",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "name": "HV_properties",
+      "status": "PASS",
+      "actual": 12
+    },
+    {
+      "name": "HV_ancestors",
+      "status": "PASS",
+      "actual": 4
+    },
+    {
+      "name": "HV_parents",
+      "status": "PASS",
+      "actual": 2
+    },
+    {
+      "name": "HV_conditions",
+      "status": "PASS",
+      "actual": 5
+    },
+    {
+      "name": "HV_conditions_OR",
+      "status": "PASS",
+      "actual": 4
+    },
+    {
+      "name": "HV_C05_AND",
+      "status": "PASS",
+      "actual": [
+        "VÀ · AND",
+        "VÀ · AND",
+        "⇒"
+      ]
+    },
+    {
+      "name": "HV_two_inheritance_paths",
+      "status": "PASS",
+      "actual": 2
+    },
+    {
+      "name": "HV_depth_1",
+      "status": "PASS",
+      "actual": [
+        8,
+        11
+      ]
+    },
+    {
+      "name": "HV_depth_2",
+      "status": "PASS",
+      "actual": [
+        23,
+        43
+      ]
+    },
+    {
+      "name": "HV_depth_3",
+      "status": "PASS",
+      "actual": [
+        39,
+        71
+      ]
+    },
+    {
+      "name": "graph_property_detail",
+      "status": "PASS",
+      "actual": "Hai đường chéo bằng nhau"
+    },
+    {
+      "name": "explorer_taxonomy",
+      "status": "PASS",
+      "actual": [
+        "7",
+        "7"
+      ]
+    },
+    {
+      "name": "query_catalog_count",
+      "status": "PASS",
+      "actual": 15
+    },
+    {
+      "name": "Q01_code_visible",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q01_UI_graph",
+      "status": "PASS",
+      "actual": [
+        44,
+        79
+      ]
+    },
+    {
+      "name": "Q01_run_success",
+      "status": "PASS",
+      "actual": "Truy vấn thành công. Kết quả đọc trực tiếp từ Neo4j."
+    },
+    {
+      "name": "Q02_code_visible",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q02_UI_expected",
+      "status": "PASS",
+      "actual": [
+        "ADJACENT_ANGLES_SUPPLEMENTARY",
+        "ANGLE_SUM_360",
+        "DIAGONALS_BISECT_ANGLES",
+        "DIAGONALS_BISECT_EACH_OTHER",
+        "DIAGONALS_EQUAL",
+        "DIAGONALS_PERPENDICULAR",
+        "FOUR_EQUAL_SIDES",
+        "FOUR_RIGHT_ANGLES",
+        "FOUR_SIDES",
+        "OPPOSITE_ANGLES_EQUAL",
+        "OPPOSITE_SIDES_EQUAL",
+        "TWO_PARALLEL_PAIRS"
+      ]
+    },
+    {
+      "name": "Q02_run_success",
+      "status": "PASS",
+      "actual": "Truy vấn thành công. Kết quả đọc trực tiếp từ Neo4j."
+    },
+    {
+      "name": "Q03_code_visible",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q03_UI_expected",
+      "status": "PASS",
+      "actual": [
+        "HCN",
+        "HTHOI"
+      ]
+    },
+    {
+      "name": "Q03_run_success",
+      "status": "PASS",
+      "actual": "Truy vấn thành công. Kết quả đọc trực tiếp từ Neo4j."
+    },
+    {
+      "name": "Q04_code_visible",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q04_UI_expected",
+      "status": "PASS",
+      "actual": [
+        "HBH",
+        "HCN",
+        "HTHOI",
+        "TQ"
+      ]
+    },
+    {
+      "name": "Q04_run_success",
+      "status": "PASS",
+      "actual": "Truy vấn thành công. Kết quả đọc trực tiếp từ Neo4j."
+    },
+    {
+      "name": "Q05_code_visible",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q05_UI_expected",
+      "status": "PASS",
+      "actual": [
+        "HCN",
+        "HTHOI",
+        "HV"
+      ]
+    },
+    {
+      "name": "Q05_run_success",
+      "status": "PASS",
+      "actual": "Truy vấn thành công. Kết quả đọc trực tiếp từ Neo4j."
+    },
+    {
+      "name": "Q06_code_visible",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q06_UI_expected",
+      "status": "PASS",
+      "actual": [
+        "HTHOI",
+        "HV"
+      ]
+    },
+    {
+      "name": "Q06_run_success",
+      "status": "PASS",
+      "actual": "Truy vấn thành công. Kết quả đọc trực tiếp từ Neo4j."
+    },
+    {
+      "name": "Q07_code_visible",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q07_UI_expected",
+      "status": "PASS",
+      "actual": [
+        "HCN",
+        "HV"
+      ]
+    },
+    {
+      "name": "Q07_run_success",
+      "status": "PASS",
+      "actual": "Truy vấn thành công. Kết quả đọc trực tiếp từ Neo4j."
+    },
+    {
+      "name": "Q08_code_visible",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q08_UI_expected",
+      "status": "PASS",
+      "actual": [
+        "HCN",
+        "HTC",
+        "HV"
+      ]
+    },
+    {
+      "name": "Q08_run_success",
+      "status": "PASS",
+      "actual": "Truy vấn thành công. Kết quả đọc trực tiếp từ Neo4j."
+    },
+    {
+      "name": "Q09_code_visible",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q09_UI_paths",
+      "status": "PASS",
+      "actual": [
+        "TQ → HBH → HCN → HV",
+        "TQ → HBH → HTHOI → HV"
+      ]
+    },
+    {
+      "name": "Q09_run_success",
+      "status": "PASS",
+      "actual": "Truy vấn thành công. Kết quả đọc trực tiếp từ Neo4j."
+    },
+    {
+      "name": "Q10_code_visible",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q10_UI_expected",
+      "status": "PASS",
+      "actual": [
+        "ADJACENT_ANGLES_SUPPLEMENTARY",
+        "ANGLE_SUM_360",
+        "DIAGONALS_BISECT_EACH_OTHER",
+        "DIAGONALS_EQUAL",
+        "FOUR_RIGHT_ANGLES",
+        "FOUR_SIDES",
+        "OPPOSITE_ANGLES_EQUAL",
+        "OPPOSITE_SIDES_EQUAL",
+        "TWO_PARALLEL_PAIRS"
+      ]
+    },
+    {
+      "name": "Q10_run_success",
+      "status": "PASS",
+      "actual": "Truy vấn thành công. Kết quả đọc trực tiếp từ Neo4j."
+    },
+    {
+      "name": "Q11_code_visible",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q11_UI_expected",
+      "status": "PASS",
+      "actual": [
+        "ADJACENT_ANGLES_SUPPLEMENTARY",
+        "ANGLE_SUM_360",
+        "DIAGONALS_BISECT_ANGLES",
+        "DIAGONALS_BISECT_EACH_OTHER",
+        "DIAGONALS_PERPENDICULAR",
+        "FOUR_EQUAL_SIDES",
+        "FOUR_SIDES",
+        "OPPOSITE_ANGLES_EQUAL",
+        "OPPOSITE_SIDES_EQUAL",
+        "TWO_PARALLEL_PAIRS"
+      ]
+    },
+    {
+      "name": "Q11_run_success",
+      "status": "PASS",
+      "actual": "Truy vấn thành công. Kết quả đọc trực tiếp từ Neo4j."
+    },
+    {
+      "name": "Q12_code_visible",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q12_UI_expected",
+      "status": "PASS",
+      "actual": [
+        "HTHOI",
+        "HV"
+      ]
+    },
+    {
+      "name": "Q12_run_success",
+      "status": "PASS",
+      "actual": "Truy vấn thành công. Kết quả đọc trực tiếp từ Neo4j."
+    },
+    {
+      "name": "Q13_code_visible",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q13_UI_degrees",
+      "status": "PASS",
+      "actual": [
+        [
+          [
+            "condition_count",
+            4
+          ],
+          [
+            "direct_property_count",
+            5
+          ],
+          [
+            "in_degree",
+            6
+          ],
+          [
+            "incoming_is_a",
+            2
+          ],
+          [
+            "incoming_requires_shape",
+            4
+          ],
+          [
+            "out_degree",
+            10
+          ],
+          [
+            "outgoing_is_a",
+            1
+          ],
+          [
+            "shape_id",
+            "HBH"
+          ]
+        ],
+        [
+          [
+            "condition_count",
+            3
+          ],
+          [
+            "direct_property_count",
+            2
+          ],
+          [
+            "in_degree",
+            3
+          ],
+          [
+            "incoming_is_a",
+            1
+          ],
+          [
+            "incoming_requires_shape",
+            2
+          ],
+          [
+            "out_degree",
+            6
+          ],
+          [
+            "outgoing_is_a",
+            1
+          ],
+          [
+            "shape_id",
+            "HCN"
+          ]
+        ],
+        [
+          [
+            "condition_count",
+            1
+          ],
+          [
+            "direct_property_count",
+            2
+          ],
+          [
+            "in_degree",
+            3
+          ],
+          [
+            "incoming_is_a",
+            1
+          ],
+          [
+            "incoming_requires_shape",
+            2
+          ],
+          [
+            "out_degree",
+            4
+          ],
+          [
+            "outgoing_is_a",
+            1
+          ],
+          [
+            "shape_id",
+            "HT"
+          ]
+        ],
+        [
+          [
+            "condition_count",
+            2
+          ],
+          [
+            "direct_property_count",
+            3
+          ],
+          [
+            "in_degree",
+            0
+          ],
+          [
+            "incoming_is_a",
+            0
+          ],
+          [
+            "incoming_requires_shape",
+            0
+          ],
+          [
+            "out_degree",
+            6
+          ],
+          [
+            "outgoing_is_a",
+            1
+          ],
+          [
+            "shape_id",
+            "HTC"
+          ]
+        ],
+        [
+          [
+            "condition_count",
+            3
+          ],
+          [
+            "direct_property_count",
+            3
+          ],
+          [
+            "in_degree",
+            3
+          ],
+          [
+            "incoming_is_a",
+            1
+          ],
+          [
+            "incoming_requires_shape",
+            2
+          ],
+          [
+            "out_degree",
+            7
+          ],
+          [
+            "outgoing_is_a",
+            1
+          ],
+          [
+            "shape_id",
+            "HTHOI"
+          ]
+        ],
+        [
+          [
+            "condition_count",
+            5
+          ],
+          [
+            "direct_property_count",
+            0
+          ],
+          [
+            "in_degree",
+            0
+          ],
+          [
+            "incoming_is_a",
+            0
+          ],
+          [
+            "incoming_requires_shape",
+            0
+          ],
+          [
+            "out_degree",
+            7
+          ],
+          [
+            "outgoing_is_a",
+            2
+          ],
+          [
+            "shape_id",
+            "HV"
+          ]
+        ],
+        [
+          [
+            "condition_count",
+            0
+          ],
+          [
+            "direct_property_count",
+            2
+          ],
+          [
+            "in_degree",
+            10
+          ],
+          [
+            "incoming_is_a",
+            2
+          ],
+          [
+            "incoming_requires_shape",
+            8
+          ],
+          [
+            "out_degree",
+            2
+          ],
+          [
+            "outgoing_is_a",
+            0
+          ],
+          [
+            "shape_id",
+            "TQ"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Q13_run_success",
+      "status": "PASS",
+      "actual": "Truy vấn thành công. Kết quả đọc trực tiếp từ Neo4j."
+    },
+    {
+      "name": "Q14_code_visible",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q14_UI_graph",
+      "status": "PASS",
+      "actual": [
+        39,
+        71
+      ]
+    },
+    {
+      "name": "Q14_run_success",
+      "status": "PASS",
+      "actual": "Truy vấn thành công. Kết quả đọc trực tiếp từ Neo4j."
+    },
+    {
+      "name": "Q15_code_visible",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q15_UI_paths",
+      "status": "PASS",
+      "actual": [
+        "HV → HCN → HBH → DIAGONALS_BISECT_EACH_OTHER",
+        "HV → HTHOI → HBH → DIAGONALS_BISECT_EACH_OTHER"
+      ]
+    },
+    {
+      "name": "Q15_run_success",
+      "status": "PASS",
+      "actual": "Truy vấn thành công. Kết quả đọc trực tiếp từ Neo4j."
+    },
+    {
+      "name": "shape_404_UI",
+      "status": "PASS",
+      "actual": "Không tìm thấy loại hình này."
+    },
+    {
+      "name": "shape_404_no_old_content",
+      "status": "PASS",
+      "actual": false
+    },
+    {
+      "name": "invalid_shape_UI",
+      "status": "PASS",
+      "actual": "ID hình không hợp lệ."
+    },
+    {
+      "name": "Neo4j_unavailable_UI",
+      "status": "PASS",
+      "actual": "Không thể kết nối Neo4j. Kiểm tra instance đang chạy."
+    },
+    {
+      "name": "Neo4j_unavailable_no_stats",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "name": "Neo4j_unavailable_no_graph",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "Flask_unavailable_UI",
+      "status": "PASS",
+      "actual": "Không liên lạc được máy chủ Flask. Kiểm tra server đang chạy rồi tải lại trang."
+    },
+    {
+      "name": "depth_UI_only_1_3",
+      "status": "PASS",
+      "actual": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "name": "mobile_/",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "mobile_/shapes",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "mobile_/shapes/HV",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "mobile_/queries",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "mobile_/about",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "graph_edge_click",
+      "status": "PASS",
+      "actual": "IS_A"
+    },
+    {
+      "name": "graph_node_click",
+      "status": "PASS",
+      "actual": "Hình chữ nhật"
+    },
+    {
+      "name": "graph_pan_zoom_fit",
+      "status": "PASS",
+      "actual": "Kéo nền, cuộn phóng to và Vừa khung đã quan sát trên canvas thật."
+    },
+    {
+      "name": "TQ_detail_properties",
+      "status": "PASS",
+      "actual": 2
+    },
+    {
+      "name": "TQ_detail_direct_summary",
+      "status": "PASS",
+      "actual": "2 tính chất · 2 trực tiếp"
+    },
+    {
+      "name": "HT_detail_properties",
+      "status": "PASS",
+      "actual": 4
+    },
+    {
+      "name": "HT_detail_direct_summary",
+      "status": "PASS",
+      "actual": "4 tính chất · 2 trực tiếp"
+    },
+    {
+      "name": "HTC_detail_properties",
+      "status": "PASS",
+      "actual": 7
+    },
+    {
+      "name": "HTC_detail_direct_summary",
+      "status": "PASS",
+      "actual": "7 tính chất · 3 trực tiếp"
+    },
+    {
+      "name": "HBH_detail_properties",
+      "status": "PASS",
+      "actual": 7
+    },
+    {
+      "name": "HBH_detail_direct_summary",
+      "status": "PASS",
+      "actual": "7 tính chất · 5 trực tiếp"
+    },
+    {
+      "name": "HCN_detail_properties",
+      "status": "PASS",
+      "actual": 9
+    },
+    {
+      "name": "HCN_detail_direct_summary",
+      "status": "PASS",
+      "actual": "9 tính chất · 2 trực tiếp"
+    },
+    {
+      "name": "HTHOI_detail_properties",
+      "status": "PASS",
+      "actual": 10
+    },
+    {
+      "name": "HTHOI_detail_direct_summary",
+      "status": "PASS",
+      "actual": "10 tính chất · 3 trực tiếp"
+    },
+    {
+      "name": "query_explanation_visible",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q01_explanation",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q02_explanation",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q03_explanation",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q04_explanation",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q05_explanation",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q06_explanation",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q07_explanation",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q08_explanation",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q09_explanation",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q10_explanation",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q11_explanation",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q12_explanation",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q13_explanation",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q14_explanation",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "Q15_explanation",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "mobile_query_results",
+      "status": "PASS",
+      "actual": 12
+    },
+    {
+      "name": "mobile_query_no_page_overflow",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "mobile_/graph",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "unexpected_console_errors",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "name": "graph_resize_mobile_no_reload",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "graph_resize_keeps_data",
+      "status": "PASS",
+      "actual": [
+        "39",
+        "71"
+      ]
+    },
+    {
+      "name": "Q01_graph_after_resize_fix",
+      "status": "PASS",
+      "actual": 1
+    },
+    {
+      "name": "Q09_graph_after_resize_fix",
+      "status": "PASS",
+      "actual": 1
+    },
+    {
+      "name": "Q14_graph_after_resize_fix",
+      "status": "PASS",
+      "actual": 1
+    },
+    {
+      "name": "Q15_graph_after_resize_fix",
+      "status": "PASS",
+      "actual": 1
+    },
+    {
+      "name": "dashboard_full_project_title",
+      "status": "PASS",
+      "actual": "Mô hình hoá – Tứ giác trong hình học phẳng với Neo4j"
+    }
+  ],
+  "unexpected_console_errors": [],
+  "error_testing": "503: second Flask app with real driver targeting an unused local port. Network error: stopped that test Flask app. Main Neo4j instance and .env unchanged. Invalid depth prevented by select 1–3; API bad-depth checked by pytest.",
+  "screenshots_source": "Real browser screenshot API; JPEG, no generated images."
+}

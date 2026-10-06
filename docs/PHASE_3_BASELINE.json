@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-10-06T22:49:22.392732+07:00",
+  "database": "quadrilateral",
+  "dataset": "quadrilateral-v1",
+  "nodes": 44,
+  "relationships": 79,
+  "dataset_sha256": "bd30ff8cdf39d79d504036bd1a581f16ccc225e74611f01bf7620d703e8ac7d8",
+  "outside_sha256": "f89e607a3788c8af815b0341b616423832479706a7bfbb80a07ecff0beacb18c"
+}

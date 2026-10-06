@@ -1,0 +1,340 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-06T17:35:42.860906+00:00",
+  "candidate_files": 157,
+  "staged_files": 157,
+  "history_commits_checked": 0,
+  "gitignore_checks": 10,
+  "required_public_files": 14,
+  "findings": [],
+  "staged_findings": [],
+  "history_findings": [],
+  "machine_paths": [],
+  "keyword_review": [
+    {
+      "file": ".env.example",
+      "part": "",
+      "hits": {
+        "neo4j_password": 1
+      },
+      "classification": "documentation_placeholder_or_test_evidence"
+    },
+    {
+      "file": "README.md",
+      "part": "",
+      "hits": {
+        "secret": 1,
+        "neo4j_password": 1,
+        "password": 3,
+        "debug": 1
+      },
+      "classification": "documentation_placeholder_or_test_evidence"
+    },
+    {
+      "file": "app/__init__.py",
+      "part": "",
+      "hits": {
+        "print(": 2
+      },
+      "classification": "application_configuration_or_error_handling"
+    },
+    {
+      "file": "app/config.py",
+      "part": "",
+      "hits": {
+        "neo4j_password": 1
+      },
+      "classification": "application_configuration_or_error_handling"
+    },
+    {
+      "file": "app/db.py",
+      "part": "",
+      "hits": {
+        "neo4j_password": 2,
+        "password": 1
+      },
+      "classification": "application_configuration_or_error_handling"
+    },
+    {
+      "file": "app/routes/api.py",
+      "part": "",
+      "hits": {
+        "print(": 1
+      },
+      "classification": "application_configuration_or_error_handling"
+    },
+    {
+      "file": "app/routes/web.py",
+      "part": "",
+      "hits": {
+        "print(": 1
+      },
+      "classification": "application_configuration_or_error_handling"
+    },
+    {
+      "file": "app/static/vendor/vis-network/vis-network.min.js",
+      "part": "",
+      "hits": {
+        "token": 5,
+        "console.log": 1,
+        "print(": 4,
+        "todo": 10,
+        "temporary": 62,
+        "debug": 1
+      },
+      "classification": "third_party_library"
+    },
+    {
+      "file": "docs/BAO_CAO_PHASE_3.md",
+      "part": "",
+      "hits": {
+        "debug": 1,
+        "password": 2
+      },
+      "classification": "documentation_placeholder_or_test_evidence"
+    },
+    {
+      "file": "docs/BAO_CAO_PHASE_5.md",
+      "part": "",
+      "hits": {
+        "todo": 1,
+        "fixme": 1,
+        "debug": 1,
+        "console.log": 1,
+        "password": 1
+      },
+      "classification": "documentation_placeholder_or_test_evidence"
+    },
+    {
+      "file": "docs/BAO_CAO_PHASE_6.md",
+      "part": "",
+      "hits": {
+        "todo": 1,
+        "neo4j_password": 1,
+        "password": 1
+      },
+      "classification": "documentation_placeholder_or_test_evidence"
+    },
+    {
+      "file": "docs/FINAL_CHECK.md",
+      "part": "",
+      "hits": {
+        "secret": 2
+      },
+      "classification": "documentation_placeholder_or_test_evidence"
+    },
+    {
+      "file": "docs/HUONG_DAN_SU_DUNG.docx",
+      "part": "word/document.xml",
+      "hits": {
+        "neo4j_password": 1,
+        "password": 4,
+        "debug": 1
+      },
+      "classification": "documentation_placeholder_or_test_evidence"
+    },
+    {
+      "file": "docs/HUONG_DAN_SU_DUNG.docx",
+      "part": "word/styles.xml",
+      "hits": {
+        "temporary": 1
+      },
+      "classification": "documentation_placeholder_or_test_evidence"
+    },
+    {
+      "file": "docs/PHASE_5_FRESH_START.json",
+      "part": "",
+      "hits": {
+        "temporary": 3
+      },
+      "classification": "documentation_placeholder_or_test_evidence"
+    },
+    {
+      "file": "docs/PHASE_5_RESULTS.json",
+      "part": "",
+      "hits": {
+        "temporary": 4
+      },
+      "classification": "documentation_placeholder_or_test_evidence"
+    },
+    {
+      "file": "docs/PHASE_6_RESULTS.json",
+      "part": "",
+      "hits": {
+        "secret": 1
+      },
+      "classification": "documentation_placeholder_or_test_evidence"
+    },
+    {
+      "file": "docs/PHASE_7_AUDIT.json",
+      "part": "",
+      "hits": {
+        "neo4j_password": 17,
+        "secret": 10,
+        "password": 14,
+        "debug": 11,
+        "print(": 13,
+        "token": 3,
+        "console.log": 3,
+        "todo": 6,
+        "temporary": 8,
+        "fixme": 3,
+        "test123": 2,
+        "api_key": 2
+      },
+      "classification": "documentation_placeholder_or_test_evidence"
+    },
+    {
+      "file": "docs/TONG_QUAN_DU_AN.docx",
+      "part": "word/document.xml",
+      "hits": {
+        "secret": 1,
+        "debug": 1
+      },
+      "classification": "documentation_placeholder_or_test_evidence"
+    },
+    {
+      "file": "docs/TONG_QUAN_DU_AN.docx",
+      "part": "word/styles.xml",
+      "hits": {
+        "temporary": 1
+      },
+      "classification": "documentation_placeholder_or_test_evidence"
+    },
+    {
+      "file": "run.py",
+      "part": "",
+      "hits": {
+        "debug": 1
+      },
+      "classification": "application_configuration_or_error_handling"
+    },
+    {
+      "file": "scripts/audit_phase6_docs.py",
+      "part": "",
+      "hits": {
+        "secret": 7,
+        "neo4j_password": 1,
+        "password": 5,
+        "todo": 1,
+        "print(": 1
+      },
+      "classification": "CLI_status_output_or_audit_rules"
+    },
+    {
+      "file": "scripts/build_phase6_docs.py",
+      "part": "",
+      "hits": {
+        "secret": 1,
+        "debug": 2,
+        "neo4j_password": 1,
+        "password": 4,
+        "print(": 1
+      },
+      "classification": "CLI_status_output_or_audit_rules"
+    },
+    {
+      "file": "scripts/fault_preview.py",
+      "part": "",
+      "hits": {
+        "debug": 1
+      },
+      "classification": "CLI_status_output_or_audit_rules"
+    },
+    {
+      "file": "scripts/http_smoke.py",
+      "part": "",
+      "hits": {
+        "neo4j_password": 2,
+        "print(": 3
+      },
+      "classification": "CLI_status_output_or_audit_rules"
+    },
+    {
+      "file": "scripts/phase2.py",
+      "part": "",
+      "hits": {
+        "print(": 11,
+        "neo4j_password": 2,
+        "password": 1
+      },
+      "classification": "CLI_status_output_or_audit_rules"
+    },
+    {
+      "file": "scripts/phase5.py",
+      "part": "",
+      "hits": {
+        "neo4j_password": 4,
+        "print(": 5,
+        "password": 1,
+        "temporary": 4
+      },
+      "classification": "CLI_status_output_or_audit_rules"
+    },
+    {
+      "file": "scripts/phase7.py",
+      "part": "",
+      "hits": {
+        "todo": 1,
+        "fixme": 1,
+        "debug": 1,
+        "temporary": 1,
+        "test123": 1,
+        "password": 13,
+        "secret": 4,
+        "token": 2,
+        "api_key": 1,
+        "neo4j_password": 2,
+        "print(": 1
+      },
+      "classification": "CLI_status_output_or_audit_rules"
+    },
+    {
+      "file": "scripts/review_phase3.py",
+      "part": "",
+      "hits": {
+        "neo4j_password": 2,
+        "secret": 2,
+        "print(": 2
+      },
+      "classification": "CLI_status_output_or_audit_rules"
+    },
+    {
+      "file": "scripts/review_phase4.py",
+      "part": "",
+      "hits": {
+        "secret": 2,
+        "neo4j_password": 1,
+        "print(": 2
+      },
+      "classification": "CLI_status_output_or_audit_rules"
+    },
+    {
+      "file": "tests/test_api_integration.py",
+      "part": "",
+      "hits": {
+        "secret": 2,
+        "neo4j_password": 2
+      },
+      "classification": "test_assertions_and_fixture_placeholders"
+    },
+    {
+      "file": "tests/test_cli_security.py",
+      "part": "",
+      "hits": {
+        "password": 2
+      },
+      "classification": "test_assertions_and_fixture_placeholders"
+    },
+    {
+      "file": "tests/test_units.py",
+      "part": "",
+      "hits": {
+        "neo4j_password": 2
+      },
+      "classification": "test_assertions_and_fixture_placeholders"
+    }
+  ],
+  "history_scope": "All locally available commits; newly initialized repository had no prior local history.",
+  "binary_scope": "Known configured password searched in file bytes; DOCX XML and relationship targets scanned; screenshots require visual review."
+}

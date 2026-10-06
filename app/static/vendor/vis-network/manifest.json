@@ -1,0 +1,12 @@
+{
+  "package": "vis-network",
+  "version": "10.1.2",
+  "source": "https://registry.npmjs.org/vis-network/-/vis-network-10.1.2.tgz",
+  "integrity": "sha512-1Kj7GD7XNjygliqRWXv/VPT1X/2eKz2e09PvwDtETHwuvKJ0emid7/PmWoFqCMypun8rLbjgmalSfPkiVZ8ZMg==",
+  "files": {
+    "LICENSE-APACHE-2.0": "1509904280a272780fd69c04b858f512cf216f8e3464a0dd98d8f34416feced9",
+    "LICENSE-MIT": "1f65085e54c036645082257618db2c7b787e68c3b02485e214ecd09e0834ee8f",
+    "vis-network.min.css": "a074f8f4c748b7ccb375a2ae58d2de1881b25a26d0e419a9e750e7d860ad18e2",
+    "vis-network.min.js": "fc674cfa6cceb27a3b40ff4ea75c204a2d8570fb39b9a627127cf7039e141ad4"
+  }
+}

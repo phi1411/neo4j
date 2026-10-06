@@ -1,0 +1,224 @@
+{
+  "status": "PASS",
+  "renderer": "Microsoft Word ExportAsFixedFormat + bundled Poppler",
+  "packaged_renderer_limitation": "LibreOffice soffice.exe missing",
+  "artifacts": [
+    {
+      "file": "docs/TONG_QUAN_DU_AN.docx",
+      "pages": 24,
+      "embedded_images": 5,
+      "page_text_checks": [
+        {
+          "page": 1,
+          "characters": 284
+        },
+        {
+          "page": 2,
+          "characters": 4642
+        },
+        {
+          "page": 3,
+          "characters": 3219
+        },
+        {
+          "page": 4,
+          "characters": 1307
+        },
+        {
+          "page": 5,
+          "characters": 1763
+        },
+        {
+          "page": 6,
+          "characters": 1035
+        },
+        {
+          "page": 7,
+          "characters": 1844
+        },
+        {
+          "page": 8,
+          "characters": 1320
+        },
+        {
+          "page": 9,
+          "characters": 707
+        },
+        {
+          "page": 10,
+          "characters": 1363
+        },
+        {
+          "page": 11,
+          "characters": 1229
+        },
+        {
+          "page": 12,
+          "characters": 1217
+        },
+        {
+          "page": 13,
+          "characters": 1161
+        },
+        {
+          "page": 14,
+          "characters": 1271
+        },
+        {
+          "page": 15,
+          "characters": 1178
+        },
+        {
+          "page": 16,
+          "characters": 1423
+        },
+        {
+          "page": 17,
+          "characters": 1489
+        },
+        {
+          "page": 18,
+          "characters": 567
+        },
+        {
+          "page": 19,
+          "characters": 358
+        },
+        {
+          "page": 20,
+          "characters": 349
+        },
+        {
+          "page": 21,
+          "characters": 353
+        },
+        {
+          "page": 22,
+          "characters": 1419
+        },
+        {
+          "page": 23,
+          "characters": 1466
+        },
+        {
+          "page": 24,
+          "characters": 1399
+        }
+      ],
+      "sha256": "4f8ad04717dbf800899d1e17832a7267a3f578a368cffeade145deafab832638"
+    },
+    {
+      "file": "docs/HUONG_DAN_SU_DUNG.docx",
+      "pages": 21,
+      "embedded_images": 13,
+      "page_text_checks": [
+        {
+          "page": 1,
+          "characters": 278
+        },
+        {
+          "page": 2,
+          "characters": 4281
+        },
+        {
+          "page": 3,
+          "characters": 1404
+        },
+        {
+          "page": 4,
+          "characters": 1495
+        },
+        {
+          "page": 5,
+          "characters": 1629
+        },
+        {
+          "page": 6,
+          "characters": 739
+        },
+        {
+          "page": 7,
+          "characters": 297
+        },
+        {
+          "page": 8,
+          "characters": 252
+        },
+        {
+          "page": 9,
+          "characters": 344
+        },
+        {
+          "page": 10,
+          "characters": 295
+        },
+        {
+          "page": 11,
+          "characters": 324
+        },
+        {
+          "page": 12,
+          "characters": 373
+        },
+        {
+          "page": 13,
+          "characters": 298
+        },
+        {
+          "page": 14,
+          "characters": 347
+        },
+        {
+          "page": 15,
+          "characters": 344
+        },
+        {
+          "page": 16,
+          "characters": 364
+        },
+        {
+          "page": 17,
+          "characters": 334
+        },
+        {
+          "page": 18,
+          "characters": 386
+        },
+        {
+          "page": 19,
+          "characters": 315
+        },
+        {
+          "page": 20,
+          "characters": 1479
+        },
+        {
+          "page": 21,
+          "characters": 1614
+        }
+      ],
+      "sha256": "9034533f6f85a51a0d9b1f41cf181ba8c49f230856205da09d570930356b37b7"
+    }
+  ],
+  "screenshot_count": 22,
+  "secret_value_matches": 0,
+  "readme_sections": 26,
+  "readme_local_links": "PASS",
+  "visual_review": {
+    "status": "PASS",
+    "overview_pages_reviewed": 24,
+    "manual_pages_reviewed": 21,
+    "review_resolution_dpi": 125,
+    "changed_pages_rechecked": 8
+  },
+  "personal_placeholders": [
+    "Trường",
+    "Khoa",
+    "Họ tên sinh viên",
+    "MSSV",
+    "Lớp",
+    "Giảng viên",
+    "Năm học"
+  ],
+  "github_published": false
+}

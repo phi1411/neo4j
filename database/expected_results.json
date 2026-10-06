@@ -1,0 +1,24 @@
+{
+  "Q02":["FOUR_SIDES","ANGLE_SUM_360","TWO_PARALLEL_PAIRS","OPPOSITE_SIDES_EQUAL","OPPOSITE_ANGLES_EQUAL","ADJACENT_ANGLES_SUPPLEMENTARY","DIAGONALS_BISECT_EACH_OTHER","FOUR_RIGHT_ANGLES","DIAGONALS_EQUAL","FOUR_EQUAL_SIDES","DIAGONALS_PERPENDICULAR","DIAGONALS_BISECT_ANGLES"],
+  "Q03":["HCN","HTHOI"],
+  "Q04":["HCN","HTHOI","HBH","TQ"],
+  "Q05":["HCN","HTHOI","HV"],
+  "Q06":["HTHOI","HV"],
+  "Q07":["HCN","HV"],
+  "Q08":["HTC","HCN","HV"],
+  "Q09":[["TQ","HBH","HCN","HV"],["TQ","HBH","HTHOI","HV"]],
+  "Q10":["FOUR_SIDES","ANGLE_SUM_360","TWO_PARALLEL_PAIRS","OPPOSITE_SIDES_EQUAL","OPPOSITE_ANGLES_EQUAL","ADJACENT_ANGLES_SUPPLEMENTARY","DIAGONALS_BISECT_EACH_OTHER","FOUR_RIGHT_ANGLES","DIAGONALS_EQUAL"],
+  "Q11":["FOUR_SIDES","ANGLE_SUM_360","TWO_PARALLEL_PAIRS","OPPOSITE_SIDES_EQUAL","OPPOSITE_ANGLES_EQUAL","ADJACENT_ANGLES_SUPPLEMENTARY","DIAGONALS_BISECT_EACH_OTHER","FOUR_EQUAL_SIDES","DIAGONALS_PERPENDICULAR","DIAGONALS_BISECT_ANGLES"],
+  "Q12":["HTHOI","HV"],
+  "Q13":[
+    {"shape_id":"HBH","outgoing_is_a":1,"direct_property_count":5,"condition_count":4,"incoming_is_a":2,"incoming_requires_shape":4,"in_degree":6,"out_degree":10},
+    {"shape_id":"HCN","outgoing_is_a":1,"direct_property_count":2,"condition_count":3,"incoming_is_a":1,"incoming_requires_shape":2,"in_degree":3,"out_degree":6},
+    {"shape_id":"HT","outgoing_is_a":1,"direct_property_count":2,"condition_count":1,"incoming_is_a":1,"incoming_requires_shape":2,"in_degree":3,"out_degree":4},
+    {"shape_id":"HTC","outgoing_is_a":1,"direct_property_count":3,"condition_count":2,"incoming_is_a":0,"incoming_requires_shape":0,"in_degree":0,"out_degree":6},
+    {"shape_id":"HTHOI","outgoing_is_a":1,"direct_property_count":3,"condition_count":3,"incoming_is_a":1,"incoming_requires_shape":2,"in_degree":3,"out_degree":7},
+    {"shape_id":"HV","outgoing_is_a":2,"direct_property_count":0,"condition_count":5,"incoming_is_a":0,"incoming_requires_shape":0,"in_degree":0,"out_degree":7},
+    {"shape_id":"TQ","outgoing_is_a":0,"direct_property_count":2,"condition_count":0,"incoming_is_a":2,"incoming_requires_shape":8,"in_degree":10,"out_degree":2}
+  ],
+  "Q14":{"1":{"nodes":8,"relationships":11},"2":{"nodes":23,"relationships":43},"3":{"nodes":39,"relationships":71}},
+  "Q15":[["HV","HCN","HBH","DIAGONALS_BISECT_EACH_OTHER"],["HV","HTHOI","HBH","DIAGONALS_BISECT_EACH_OTHER"]]
+}

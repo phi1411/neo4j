@@ -1,0 +1,134 @@
+[
+  {
+    "file": "docs/images/phase5/01_dashboard.jpg",
+    "width": 1265,
+    "height": 889,
+    "sha256": "a9f667b40c797f57367ef98c5d5b329ce5a27b5f11259e7faa5184bac8998c34"
+  },
+  {
+    "file": "docs/images/phase5/02_taxonomy_graph.jpg",
+    "width": 1265,
+    "height": 889,
+    "sha256": "a0193b8e68b64f9c2ce8cc3ba77d3e14dd706e8a24ef0d8d13a04f3570ba92a7"
+  },
+  {
+    "file": "docs/images/phase5/03_shapes.jpg",
+    "width": 1265,
+    "height": 889,
+    "sha256": "614dec09414d3dd040cce06b0d2043f0abfbbe4e7ae1a60ad061bb0112590687"
+  },
+  {
+    "file": "docs/images/phase5/04_shape_hv_overview.jpg",
+    "width": 1265,
+    "height": 889,
+    "sha256": "5b5b22c854a3ea1187b778a25bc4fddd71b0b25e088d5619ff19cc4eba96624b"
+  },
+  {
+    "file": "docs/images/phase5/05_shape_hv_properties.jpg",
+    "width": 1265,
+    "height": 889,
+    "sha256": "2fe80a2121129a7d929e1ea1148c679d0087252748c606116924907fd251943b"
+  },
+  {
+    "file": "docs/images/phase5/06_shape_hv_conditions.jpg",
+    "width": 1265,
+    "height": 889,
+    "sha256": "2cbd67f5e439bbd69b4f74ce43f7a54f169aa3ede0666f37147caace6c7e67f9"
+  },
+  {
+    "file": "docs/images/phase5/07_graph_depth1.jpg",
+    "width": 1265,
+    "height": 889,
+    "sha256": "7747160e205c8cc46bbe71339ba6eed9de8375ae64960d330fca204c90d4c1a1"
+  },
+  {
+    "file": "docs/images/phase5/08_graph_depth2.jpg",
+    "width": 1265,
+    "height": 889,
+    "sha256": "039e4f46a3ed8f664536e450a143d2db68a8c7cc15316ebe617929ccb6e475fc"
+  },
+  {
+    "file": "docs/images/phase5/08_graph_depth3.jpg",
+    "width": 1265,
+    "height": 889,
+    "sha256": "db6b5d3e7745afafd170f37b5d9e63a8130cc3bbda551cb5484d529c9de57ae0"
+  },
+  {
+    "file": "docs/images/phase5/09_queries_list.jpg",
+    "width": 1265,
+    "height": 889,
+    "sha256": "91339d82e93bf4d94fe7ad70d0f9e918804d08f735be99b3d5e8be94881cc7f1"
+  },
+  {
+    "file": "docs/images/phase5/10_query_Q06.jpg",
+    "width": 1265,
+    "height": 889,
+    "sha256": "9ccf8327ce3c2cee3d3832cb6e1b8fa7f34d3454f696a0947d27002f88c547ff"
+  },
+  {
+    "file": "docs/images/phase5/11_query_Q09.jpg",
+    "width": 1265,
+    "height": 889,
+    "sha256": "b9d2ff10df9809d0855a880318fb1ae6d2625bf2b73356c5c141ab92dd5cd14d"
+  },
+  {
+    "file": "docs/images/phase5/12_query_Q15.jpg",
+    "width": 1265,
+    "height": 889,
+    "sha256": "0a1dca48ab9d042e4eee26267b38ac33c1b3a4bcc119635eadec8b147f16e4c3"
+  },
+  {
+    "file": "docs/images/phase5/12_query_Q15_graph.jpg",
+    "width": 1265,
+    "height": 889,
+    "sha256": "3c73764f711b3a54a3945b10129d227cc3a02eaed8dee3857f6e3ebe1a6aedd5"
+  },
+  {
+    "file": "docs/images/phase5/13_neo4j_graph.jpg",
+    "width": 516,
+    "height": 676,
+    "sha256": "6daa4f07f5f109f4a66806aa09d6b404c3e28eeb33ee657a84ba75fc8b0e1c73"
+  },
+  {
+    "file": "docs/images/phase5/14_neo4j_query.jpg",
+    "width": 516,
+    "height": 676,
+    "sha256": "832cd91ae0162e373267f9b2b39d5a264e47d4711f749307c5a609615718ef11"
+  },
+  {
+    "file": "docs/images/phase5/15_graph_tooltip.jpg",
+    "width": 1265,
+    "height": 889,
+    "sha256": "580a38947ff86c863478aa040e5538a93b5acf250c18aabc862ecf1df1361831"
+  },
+  {
+    "file": "docs/images/phase5/16_mobile_graph.jpg",
+    "width": 375,
+    "height": 811,
+    "sha256": "894bbbc393eca998c03872c9199c2ff381bc06adad18ba8a7a1a851bfefec8a2"
+  },
+  {
+    "file": "docs/images/phase5/17_neo4j_unavailable.jpg",
+    "width": 501,
+    "height": 656,
+    "sha256": "3908aa0d7591f2f507368eca30f75e037e6fee8a16b827313076701073b08eee"
+  },
+  {
+    "file": "docs/images/phase5/query_Q07.jpg",
+    "width": 1265,
+    "height": 889,
+    "sha256": "01dd4b3484e2c7096fed30bdd7692943ebdd371a9416bda11a09bce46355c076"
+  },
+  {
+    "file": "docs/images/phase5/query_Q08.jpg",
+    "width": 1265,
+    "height": 889,
+    "sha256": "c3f1e339d1b56f862c5af5b8d8d073d6e597bd075f21fe137e73cec779f842ca"
+  },
+  {
+    "file": "docs/images/04_search_hinh_vuong.jpg",
+    "width": 500,
+    "height": 1024,
+    "sha256": "24a64274e1399cc968936c0dd2c6206377ae5c550183c0767518e235ebaf18ee"
+  }
+]

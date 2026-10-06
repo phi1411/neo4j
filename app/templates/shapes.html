@@ -1,0 +1,5 @@
+{% extends 'base.html' %}{% block content %}
+<div class="page-intro compact"><p class="eyebrow">DANH MỤC KIẾN THỨC</p><h1>Các loại tứ giác</h1><p class="lead">Tra cứu định nghĩa, tính chất kế thừa và dấu hiệu nhận biết của từng loại hình.</p></div>
+<form id="search-form" class="search-form"><label for="search-input">Tìm theo tên hình</label><div class="search-row"><input id="search-input" type="search" maxlength="200" placeholder="Ví dụ: Hình vuông, hinh vuong, VUONG" autocomplete="off"><button class="button primary" type="submit">Tìm kiếm</button><button id="search-reset" class="button" type="button">Xem tất cả</button></div></form>
+<div id="shapes-state" class="state" role="status" aria-live="polite">Đang tải các loại hình…</div><div id="shape-list" class="shape-grid"></div>
+{% endblock %}

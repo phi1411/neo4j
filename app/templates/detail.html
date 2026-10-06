@@ -1,0 +1,13 @@
+{% extends 'base.html' %}{% from '_graph.html' import graph_panel %}{% block content %}
+<a class="back-link" href="/shapes">← Các loại tứ giác</a>
+<div id="detail-state" class="state" role="status">Đang tải thông tin loại hình…</div>
+<div id="detail-content" hidden>
+ <div class="page-intro compact"><p class="eyebrow" id="shape-code"></p><h1 id="shape-name"></h1><p class="lead" id="shape-definition"></p></div>
+ <section class="panel"><h2>Quan hệ phân loại</h2><div class="two-columns"><div><h3>Cha trực tiếp</h3><div id="parents" class="chips"></div></div><div><h3>Tất cả tổ tiên qua IS_A</h3><div id="ancestors" class="chips"></div></div></div><p class="muted">Khoảng cách là số cạnh IS_A ngắn nhất. Nhiều đường tới cùng tổ tiên được gộp thành một kết quả.</p></section>
+ <section class="panel" id="properties-section"><div class="panel-heading"><h2>Tính chất hiệu lực</h2><span id="property-summary" class="badge"></span></div><p class="muted">Gồm tính chất trực tiếp và tính chất qua tổ tiên; mỗi Property chỉ hiển thị một lần.</p><div id="properties"></div></section>
+ <section class="panel" id="conditions-section"><h2>Điều kiện nhận biết</h2><p class="muted">Trong một quy tắc: ngữ cảnh hình <strong>VÀ (AND)</strong> mọi giả thiết. Giữa các quy tắc: <strong>HOẶC (OR)</strong>; mỗi quy tắc là một dấu hiệu đủ độc lập.</p><div id="conditions"></div></section>
+ <div class="section-intro"><h2>Graph liên quan</h2><form id="detail-graph-form" class="inline-form"><label for="detail-depth">Độ sâu<select id="detail-depth"><option>1</option><option>2</option><option>3</option></select></label><button class="button" type="submit">Tải graph</button></form></div>
+ <p class="muted">Graph lân cận đi không hướng qua các loại cạnh; các hình cùng xuất hiện không mặc nhiên có quan hệ IS_A.</p>
+ {{ graph_panel('detail-graph', 'Lân cận của loại hình') }}
+</div>
+{% endblock %}

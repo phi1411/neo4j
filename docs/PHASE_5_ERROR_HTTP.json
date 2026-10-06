@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "path": "/api/search?q=+++",
+      "port": 5000,
+      "http_status": 400,
+      "status": "PASS",
+      "evidence": "EMPTY_SEARCH"
+    },
+    {
+      "path": "/api/search?q=%40%23%24%25",
+      "port": 5000,
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "path": "/api/search?q=khong-ton-tai",
+      "port": 5000,
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "path": "/api/health",
+      "port": 5001,
+      "http_status": 503,
+      "status": "PASS",
+      "evidence": "NEO4J_UNAVAILABLE"
+    },
+    {
+      "path": "/api/stats",
+      "port": 5001,
+      "http_status": 503,
+      "status": "PASS",
+      "evidence": "NEO4J_UNAVAILABLE"
+    },
+    {
+      "path": "/api/shapes/HV",
+      "port": 5001,
+      "http_status": 503,
+      "status": "PASS",
+      "evidence": "NEO4J_UNAVAILABLE"
+    },
+    {
+      "path": "/api/graph/taxonomy",
+      "port": 5001,
+      "http_status": 503,
+      "status": "PASS",
+      "evidence": "NEO4J_UNAVAILABLE"
+    },
+    {
+      "path": "/api/queries/Q06",
+      "port": 5001,
+      "http_status": 503,
+      "status": "PASS",
+      "evidence": "NEO4J_UNAVAILABLE"
+    }
+  ]
+}

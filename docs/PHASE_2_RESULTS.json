@@ -1,0 +1,3060 @@
+{
+  "status": "PASS",
+  "database": "quadrilateral",
+  "dataset": "quadrilateral-v1",
+  "checked_at": "2026-10-06T22:32:23.774520+07:00",
+  "components": [
+    {
+      "name": "Neo4j Kernel",
+      "versions": [
+        "2026.09.0"
+      ],
+      "edition": "enterprise"
+    },
+    {
+      "name": "Cypher",
+      "versions": [
+        "5",
+        "25"
+      ],
+      "edition": ""
+    }
+  ],
+  "nodes": 44,
+  "relationships": 79,
+  "node_counts": {
+    "Condition": 18,
+    "Property": 19,
+    "Shape": 7
+  },
+  "relationship_counts": {
+    "HAS_CONDITION": 18,
+    "HAS_PROPERTY": 17,
+    "IS_A": 7,
+    "REQUIRES_PROPERTY": 19,
+    "REQUIRES_SHAPE": 18
+  },
+  "schema": {
+    "constraints": [
+      {
+        "name": "quadrilateral_condition_id",
+        "type": "NODE_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "Condition"
+        ],
+        "properties": [
+          "dataset",
+          "id"
+        ]
+      },
+      {
+        "name": "quadrilateral_property_id",
+        "type": "NODE_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "Property"
+        ],
+        "properties": [
+          "dataset",
+          "id"
+        ]
+      },
+      {
+        "name": "quadrilateral_shape_id",
+        "type": "NODE_PROPERTY_UNIQUENESS",
+        "labelsOrTypes": [
+          "Shape"
+        ],
+        "properties": [
+          "dataset",
+          "id"
+        ]
+      }
+    ],
+    "indexes": [
+      {
+        "name": "quadrilateral_condition_id",
+        "type": "RANGE",
+        "state": "ONLINE"
+      },
+      {
+        "name": "quadrilateral_property_id",
+        "type": "RANGE",
+        "state": "ONLINE"
+      },
+      {
+        "name": "quadrilateral_shape_id",
+        "type": "RANGE",
+        "state": "ONLINE"
+      },
+      {
+        "name": "quadrilateral_shape_search",
+        "type": "RANGE",
+        "state": "ONLINE"
+      }
+    ]
+  },
+  "first_seed_counters": [
+    {
+      "nodes_created": 7,
+      "relationships_created": 0,
+      "properties_set": 56,
+      "constraints_added": 0,
+      "indexes_added": 0
+    },
+    {
+      "nodes_created": 19,
+      "relationships_created": 0,
+      "properties_set": 152,
+      "constraints_added": 0,
+      "indexes_added": 0
+    },
+    {
+      "nodes_created": 18,
+      "relationships_created": 0,
+      "properties_set": 144,
+      "constraints_added": 0,
+      "indexes_added": 0
+    },
+    {
+      "nodes_created": 0,
+      "relationships_created": 7,
+      "properties_set": 0,
+      "constraints_added": 0,
+      "indexes_added": 0
+    },
+    {
+      "nodes_created": 0,
+      "relationships_created": 17,
+      "properties_set": 0,
+      "constraints_added": 0,
+      "indexes_added": 0
+    },
+    {
+      "nodes_created": 0,
+      "relationships_created": 18,
+      "properties_set": 0,
+      "constraints_added": 0,
+      "indexes_added": 0
+    },
+    {
+      "nodes_created": 0,
+      "relationships_created": 18,
+      "properties_set": 0,
+      "constraints_added": 0,
+      "indexes_added": 0
+    },
+    {
+      "nodes_created": 0,
+      "relationships_created": 19,
+      "properties_set": 0,
+      "constraints_added": 0,
+      "indexes_added": 0
+    }
+  ],
+  "second_seed_counters": [
+    {
+      "nodes_created": 0,
+      "relationships_created": 0,
+      "properties_set": 42,
+      "constraints_added": 0,
+      "indexes_added": 0
+    },
+    {
+      "nodes_created": 0,
+      "relationships_created": 0,
+      "properties_set": 114,
+      "constraints_added": 0,
+      "indexes_added": 0
+    },
+    {
+      "nodes_created": 0,
+      "relationships_created": 0,
+      "properties_set": 108,
+      "constraints_added": 0,
+      "indexes_added": 0
+    },
+    {
+      "nodes_created": 0,
+      "relationships_created": 0,
+      "properties_set": 0,
+      "constraints_added": 0,
+      "indexes_added": 0
+    },
+    {
+      "nodes_created": 0,
+      "relationships_created": 0,
+      "properties_set": 0,
+      "constraints_added": 0,
+      "indexes_added": 0
+    },
+    {
+      "nodes_created": 0,
+      "relationships_created": 0,
+      "properties_set": 0,
+      "constraints_added": 0,
+      "indexes_added": 0
+    },
+    {
+      "nodes_created": 0,
+      "relationships_created": 0,
+      "properties_set": 0,
+      "constraints_added": 0,
+      "indexes_added": 0
+    },
+    {
+      "nodes_created": 0,
+      "relationships_created": 0,
+      "properties_set": 0,
+      "constraints_added": 0,
+      "indexes_added": 0
+    }
+  ],
+  "idempotent": true,
+  "first_sha256": "bd30ff8cdf39d79d504036bd1a581f16ccc225e74611f01bf7620d703e8ac7d8",
+  "second_sha256": "bd30ff8cdf39d79d504036bd1a581f16ccc225e74611f01bf7620d703e8ac7d8",
+  "outside_dataset_unchanged": true,
+  "validations": [
+    {
+      "id": "V01",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "id": "V02",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "id": "V03",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "id": "V04",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "id": "V05",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "id": "V06",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "id": "V07",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "id": "V08",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "id": "V09",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "id": "V10",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "id": "V11",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "id": "V12",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "id": "V13",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "id": "V14",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "id": "V15",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "id": "V16",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "id": "V17",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "id": "V18",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "id": "V19",
+      "status": "PASS",
+      "violations": 0
+    },
+    {
+      "id": "V20",
+      "status": "PASS",
+      "violations": 0
+    }
+  ],
+  "queries": [
+    {
+      "id": "Q01",
+      "status": "PASS",
+      "rows": [
+        {
+          "nodes": [
+            {
+              "key": "Shape:TQ",
+              "labels": [
+                "ProjectEntity",
+                "Shape"
+              ],
+              "properties": {
+                "display_order": 1,
+                "name": "Tứ giác",
+                "definition": "Đa giác lồi, không suy biến có bốn cạnh trong mặt phẳng.",
+                "source_ref": "https://mathworld.wolfram.com/Quadrilateral.html",
+                "id": "TQ",
+                "search_name": "tu giac",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Shape:HT",
+              "labels": [
+                "ProjectEntity",
+                "Shape"
+              ],
+              "properties": {
+                "display_order": 2,
+                "name": "Hình thang",
+                "definition": "Tứ giác có đúng một cặp cạnh đối song song, theo quy ước phân loại loại trừ của project.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#2",
+                "id": "HT",
+                "search_name": "hinh thang",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Shape:HTC",
+              "labels": [
+                "ProjectEntity",
+                "Shape"
+              ],
+              "properties": {
+                "display_order": 3,
+                "name": "Hình thang cân",
+                "definition": "Hình thang có hai góc kề một đáy bằng nhau.",
+                "source_ref": "https://mathworld.wolfram.com/IsoscelesTrapezoid.html",
+                "id": "HTC",
+                "search_name": "hinh thang can",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Shape:HBH",
+              "labels": [
+                "ProjectEntity",
+                "Shape"
+              ],
+              "properties": {
+                "display_order": 4,
+                "name": "Hình bình hành",
+                "definition": "Tứ giác có hai cặp cạnh đối song song.",
+                "source_ref": "https://mathworld.wolfram.com/Parallelogram.html",
+                "id": "HBH",
+                "search_name": "hinh binh hanh",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Shape:HCN",
+              "labels": [
+                "ProjectEntity",
+                "Shape"
+              ],
+              "properties": {
+                "display_order": 5,
+                "name": "Hình chữ nhật",
+                "definition": "Tứ giác có bốn góc vuông; bao gồm trường hợp đặc biệt là hình vuông.",
+                "source_ref": "https://mathworld.wolfram.com/Rectangle.html",
+                "id": "HCN",
+                "search_name": "hinh chu nhat",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Shape:HTHOI",
+              "labels": [
+                "ProjectEntity",
+                "Shape"
+              ],
+              "properties": {
+                "display_order": 6,
+                "name": "Hình thoi",
+                "definition": "Tứ giác có bốn cạnh bằng nhau; bao gồm trường hợp đặc biệt là hình vuông.",
+                "source_ref": "https://mathworld.wolfram.com/Rhombus.html",
+                "id": "HTHOI",
+                "search_name": "hinh thoi",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Shape:HV",
+              "labels": [
+                "ProjectEntity",
+                "Shape"
+              ],
+              "properties": {
+                "display_order": 7,
+                "name": "Hình vuông",
+                "definition": "Tứ giác có bốn cạnh bằng nhau và bốn góc vuông.",
+                "source_ref": "https://mathworld.wolfram.com/Square.html",
+                "id": "HV",
+                "search_name": "hinh vuong",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:FOUR_SIDES",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "AB, BC, CD, DA",
+                "name": "Có bốn cạnh",
+                "description": "Đường biên của tứ giác gồm bốn đoạn thẳng nối bốn đỉnh liên tiếp.",
+                "source_ref": "https://mathworld.wolfram.com/Quadrilateral.html",
+                "id": "FOUR_SIDES",
+                "category": "structure",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:ANGLE_SUM_360",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "∠A + ∠B + ∠C + ∠D = 360°",
+                "name": "Tổng bốn góc trong bằng 360°",
+                "description": "Áp dụng cho tứ giác lồi không suy biến trong mặt phẳng.",
+                "source_ref": "https://mathworld.wolfram.com/Quadrilateral.html",
+                "id": "ANGLE_SUM_360",
+                "category": "angle",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:EXACTLY_ONE_PARALLEL_PAIR",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "AB ∥ CD và AD không song song BC (hoặc đổi cặp)",
+                "name": "Có đúng một cặp cạnh đối song song",
+                "description": "Quy ước hình thang loại trừ của project: một cặp cạnh đối song song, cặp còn lại không song song.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#2",
+                "id": "EXACTLY_ONE_PARALLEL_PAIR",
+                "category": "side",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:LEG_ADJACENT_ANGLES_SUPPLEMENTARY",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "∠A + ∠D = 180°; ∠B + ∠C = 180°",
+                "name": "Hai góc kề cùng một cạnh bên bù nhau",
+                "description": "Với hai đáy AB ∥ CD, các góc trong cùng phía trên mỗi cạnh bên có tổng 180°.",
+                "source_ref": "https://mathworld.wolfram.com/Trapezoid.html",
+                "id": "LEG_ADJACENT_ANGLES_SUPPLEMENTARY",
+                "category": "angle",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:LEGS_EQUAL",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "AD = BC",
+                "name": "Hai cạnh bên bằng nhau",
+                "description": "Với hai đáy AB và CD đã chọn, hai cạnh bên là AD và BC.",
+                "source_ref": "https://mathworld.wolfram.com/IsoscelesTrapezoid.html",
+                "id": "LEGS_EQUAL",
+                "category": "side",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:BASE_ANGLES_EQUAL",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "∠A = ∠B; ∠D = ∠C",
+                "name": "Hai góc kề mỗi đáy bằng nhau",
+                "description": "Với AB ∥ CD, hai góc tại đáy AB bằng nhau và hai góc tại đáy CD bằng nhau.",
+                "source_ref": "https://mathworld.wolfram.com/IsoscelesTrapezoid.html",
+                "id": "BASE_ANGLES_EQUAL",
+                "category": "angle",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:DIAGONALS_EQUAL",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "AC = BD",
+                "name": "Hai đường chéo bằng nhau",
+                "description": "Độ dài hai đoạn nối các đỉnh đối diện bằng nhau; không tự nó đủ nhận biết hình chữ nhật.",
+                "source_ref": "https://mathworld.wolfram.com/Rectangle.html; https://mathworld.wolfram.com/IsoscelesTrapezoid.html",
+                "id": "DIAGONALS_EQUAL",
+                "category": "diagonal",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:TWO_PARALLEL_PAIRS",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "AB ∥ CD; AD ∥ BC",
+                "name": "Có hai cặp cạnh đối song song",
+                "description": "Cả hai cặp cạnh đối của tứ giác song song.",
+                "source_ref": "https://mathworld.wolfram.com/Parallelogram.html",
+                "id": "TWO_PARALLEL_PAIRS",
+                "category": "side",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:OPPOSITE_SIDES_EQUAL",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "AB = CD; AD = BC",
+                "name": "Hai cặp cạnh đối bằng nhau",
+                "description": "Mỗi cạnh bằng cạnh đối diện của nó.",
+                "source_ref": "https://mathworld.wolfram.com/Parallelogram.html",
+                "id": "OPPOSITE_SIDES_EQUAL",
+                "category": "side",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:OPPOSITE_ANGLES_EQUAL",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "∠A = ∠C; ∠B = ∠D",
+                "name": "Hai cặp góc đối bằng nhau",
+                "description": "Cả hai cặp góc đối của tứ giác có số đo bằng nhau.",
+                "source_ref": "https://mathworld.wolfram.com/Parallelogram.html",
+                "id": "OPPOSITE_ANGLES_EQUAL",
+                "category": "angle",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:ADJACENT_ANGLES_SUPPLEMENTARY",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "∠A + ∠B = ∠B + ∠C = ∠C + ∠D = ∠D + ∠A = 180°",
+                "name": "Mọi cặp góc kề nhau bù nhau",
+                "description": "Mỗi cặp góc ở hai đỉnh liên tiếp có tổng 180°.",
+                "source_ref": "https://mathworld.wolfram.com/Parallelogram.html",
+                "id": "ADJACENT_ANGLES_SUPPLEMENTARY",
+                "category": "angle",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:DIAGONALS_BISECT_EACH_OTHER",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "O = AC ∩ BD; OA = OC; OB = OD",
+                "name": "Hai đường chéo chia đôi nhau",
+                "description": "Giao điểm của hai đường chéo là trung điểm của mỗi đường, không chỉ của một đường.",
+                "source_ref": "https://mathworld.wolfram.com/Parallelogram.html",
+                "id": "DIAGONALS_BISECT_EACH_OTHER",
+                "category": "diagonal",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:FOUR_RIGHT_ANGLES",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "∠A = ∠B = ∠C = ∠D = 90°",
+                "name": "Có bốn góc vuông",
+                "description": "Bốn góc trong của tứ giác đều bằng 90°.",
+                "source_ref": "https://mathworld.wolfram.com/Rectangle.html",
+                "id": "FOUR_RIGHT_ANGLES",
+                "category": "angle",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:FOUR_EQUAL_SIDES",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "AB = BC = CD = DA",
+                "name": "Có bốn cạnh bằng nhau",
+                "description": "Độ dài bốn cạnh bằng nhau; không khẳng định các góc đều vuông.",
+                "source_ref": "https://mathworld.wolfram.com/Rhombus.html",
+                "id": "FOUR_EQUAL_SIDES",
+                "category": "side",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:DIAGONALS_PERPENDICULAR",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "AC ⟂ BD",
+                "name": "Hai đường chéo vuông góc",
+                "description": "Hai đường chéo tạo góc 90° tại giao điểm; không tự nó đủ nhận biết hình thoi.",
+                "source_ref": "https://mathworld.wolfram.com/Rhombus.html",
+                "id": "DIAGONALS_PERPENDICULAR",
+                "category": "diagonal",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:DIAGONALS_BISECT_ANGLES",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "∠BAC = ∠CAD; ∠BCA = ∠ACD; ∠ABD = ∠DBC; ∠ADB = ∠BDC",
+                "name": "Các đường chéo phân giác các góc",
+                "description": "Mỗi đường chéo phân giác góc trong tại hai đầu của nó.",
+                "source_ref": "https://mathworld.wolfram.com/Rhombus.html",
+                "id": "DIAGONALS_BISECT_ANGLES",
+                "category": "diagonal_angle",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:THREE_RIGHT_ANGLES",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "Ba trong bốn góc bằng 90°",
+                "name": "Có ít nhất ba góc vuông",
+                "description": "Giả thiết nhận biết; tổng góc 360° buộc góc thứ tư cũng vuông.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "THREE_RIGHT_ANGLES",
+                "category": "angle",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:HAS_RIGHT_ANGLE",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "Tồn tại một góc bằng 90°",
+                "name": "Có ít nhất một góc vuông",
+                "description": "Giả thiết nhận biết khi đã biết ngữ cảnh hình bình hành hoặc hình thoi.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "HAS_RIGHT_ANGLE",
+                "category": "angle",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:ADJACENT_SIDES_EQUAL",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "Ví dụ AB = BC",
+                "name": "Có một cặp cạnh kề bằng nhau",
+                "description": "Giả thiết nhận biết khi đã biết ngữ cảnh hình bình hành hoặc hình chữ nhật.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "ADJACENT_SIDES_EQUAL",
+                "category": "side",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HT_01",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình thang theo định nghĩa",
+                "statement": "Tứ giác có đúng một cặp cạnh đối song song là hình thang.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#2",
+                "id": "C_HT_01",
+                "logic": "AND",
+                "explanation": "Áp dụng định nghĩa hình thang loại trừ của project; hai cặp song song thuộc nhánh hình bình hành.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HTC_01",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình thang cân bằng góc ở đáy",
+                "statement": "Hình thang có hai góc kề mỗi đáy bằng nhau là hình thang cân.",
+                "source_ref": "https://mathworld.wolfram.com/IsoscelesTrapezoid.html",
+                "id": "C_HTC_01",
+                "logic": "AND",
+                "explanation": "Trong hình thang, chỉ cần hai góc kề một đáy bằng nhau; tính bù trên cạnh bên suy ra cặp ở đáy còn lại cũng bằng nhau.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HTC_02",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình thang cân bằng đường chéo",
+                "statement": "Hình thang có hai đường chéo bằng nhau là hình thang cân.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HTC_02",
+                "logic": "AND",
+                "explanation": "Phải có giả thiết hình thang; tính bằng nhau của đường chéo xác định tính đối xứng giữa hai cạnh bên và hai góc ở đáy.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HBH_01",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình bình hành bằng cạnh song song",
+                "statement": "Tứ giác có hai cặp cạnh đối song song là hình bình hành.",
+                "source_ref": "https://mathworld.wolfram.com/Parallelogram.html",
+                "id": "C_HBH_01",
+                "logic": "AND",
+                "explanation": "Đúng theo định nghĩa hình bình hành.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HBH_02",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình bình hành bằng cạnh bằng nhau",
+                "statement": "Tứ giác có hai cặp cạnh đối bằng nhau là hình bình hành.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HBH_02",
+                "logic": "AND",
+                "explanation": "Đường chéo chia tứ giác thành hai tam giác bằng nhau theo cạnh-cạnh-cạnh; các góc so le trong suy ra hai cặp cạnh song song.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HBH_03",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình bình hành bằng góc đối",
+                "statement": "Tứ giác có hai cặp góc đối bằng nhau là hình bình hành.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HBH_03",
+                "logic": "AND",
+                "explanation": "Tổng góc 360° suy ra các góc kề bù nhau; đảo của tính chất góc trong cùng phía cho hai cặp cạnh song song.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HBH_04",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình bình hành bằng trung điểm đường chéo",
+                "statement": "Tứ giác có hai đường chéo chia đôi nhau là hình bình hành.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HBH_04",
+                "logic": "AND",
+                "explanation": "Các cặp tam giác đối đỉnh bằng nhau theo cạnh-góc-cạnh tại giao điểm; suy ra các cạnh đối song song.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HCN_01",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình chữ nhật bằng ba góc vuông",
+                "statement": "Tứ giác có ít nhất ba góc vuông là hình chữ nhật.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HCN_01",
+                "logic": "AND",
+                "explanation": "Tổng bốn góc bằng 360° nên góc còn lại bằng 90°.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HCN_02",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình chữ nhật từ hình bình hành có góc vuông",
+                "statement": "Hình bình hành có một góc vuông là hình chữ nhật.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HCN_02",
+                "logic": "AND",
+                "explanation": "Các góc đối bằng nhau và góc kề bù nhau khiến cả bốn góc đều vuông.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HCN_03",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình chữ nhật từ hình bình hành có đường chéo bằng nhau",
+                "statement": "Hình bình hành có hai đường chéo bằng nhau là hình chữ nhật.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HCN_03",
+                "logic": "AND",
+                "explanation": "Trong hình bình hành, các tam giác tạo bởi cạnh và hai đường chéo bằng nhau theo cạnh-cạnh-cạnh; góc kề bằng nhau và bù nhau nên bằng 90°.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HTHOI_01",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình thoi bằng bốn cạnh",
+                "statement": "Tứ giác có bốn cạnh bằng nhau là hình thoi.",
+                "source_ref": "https://mathworld.wolfram.com/Rhombus.html",
+                "id": "C_HTHOI_01",
+                "logic": "AND",
+                "explanation": "Theo định nghĩa; hai cặp cạnh đối bằng nhau cũng đảm bảo đây là hình bình hành.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HTHOI_02",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình thoi từ hai cạnh kề",
+                "statement": "Hình bình hành có hai cạnh kề bằng nhau là hình thoi.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HTHOI_02",
+                "logic": "AND",
+                "explanation": "Cạnh đối của hình bình hành bằng nhau nên một cặp cạnh kề bằng nhau dẫn tới cả bốn cạnh bằng nhau.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HTHOI_03",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình thoi từ đường chéo vuông góc",
+                "statement": "Hình bình hành có hai đường chéo vuông góc là hình thoi.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HTHOI_03",
+                "logic": "AND",
+                "explanation": "Đường chéo chia đôi nhau; các tam giác vuông tại giao điểm có hai cạnh góc vuông tương ứng bằng nhau, suy ra bốn cạnh bằng nhau.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HV_01",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình vuông từ hai cạnh kề của hình chữ nhật",
+                "statement": "Hình chữ nhật có hai cạnh kề bằng nhau là hình vuông.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HV_01",
+                "logic": "AND",
+                "explanation": "Cạnh đối bằng nhau khiến cả bốn cạnh bằng nhau; bốn góc vuông đã có từ ngữ cảnh.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HV_02",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình vuông từ đường chéo hình chữ nhật",
+                "statement": "Hình chữ nhật có hai đường chéo vuông góc là hình vuông.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HV_02",
+                "logic": "AND",
+                "explanation": "Hình chữ nhật là hình bình hành; đường chéo vuông góc suy ra hình thoi. Đồng thời là hình thoi và hình chữ nhật nên là hình vuông.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HV_03",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình vuông từ góc vuông của hình thoi",
+                "statement": "Hình thoi có một góc vuông là hình vuông.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HV_03",
+                "logic": "AND",
+                "explanation": "Hình thoi là hình bình hành; một góc vuông suy ra bốn góc vuông. Bốn cạnh bằng nhau đã có từ ngữ cảnh.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HV_04",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình vuông từ đường chéo bằng nhau của hình thoi",
+                "statement": "Hình thoi có hai đường chéo bằng nhau là hình vuông.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HV_04",
+                "logic": "AND",
+                "explanation": "Hình thoi là hình bình hành; đường chéo bằng nhau suy ra hình chữ nhật. Đồng thời bốn cạnh bằng nhau nên là hình vuông.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HV_05",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình vuông theo hai nhóm giả thiết đồng thời",
+                "statement": "Tứ giác có bốn cạnh bằng nhau và bốn góc vuông là hình vuông.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HV_05",
+                "logic": "AND",
+                "explanation": "Phải thỏa mãn đồng thời cả hai Property; nhiều dấu hiệu đủ khác nhau của HV được hiểu theo OR.",
+                "dataset": "quadrilateral-v1"
+              }
+            }
+          ],
+          "relationships": [
+            {
+              "source": "Shape:HT",
+              "type": "IS_A",
+              "target": "Shape:TQ",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HBH",
+              "type": "IS_A",
+              "target": "Shape:TQ",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HT_01",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:TQ",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HBH_01",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:TQ",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HBH_02",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:TQ",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HBH_03",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:TQ",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HBH_04",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:TQ",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HCN_01",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:TQ",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HTHOI_01",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:TQ",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HV_05",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:TQ",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTC",
+              "type": "IS_A",
+              "target": "Shape:HT",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HTC_01",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:HT",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HTC_02",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:HT",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HCN",
+              "type": "IS_A",
+              "target": "Shape:HBH",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTHOI",
+              "type": "IS_A",
+              "target": "Shape:HBH",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HCN_02",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:HBH",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HCN_03",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:HBH",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HTHOI_02",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:HBH",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HTHOI_03",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:HBH",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HV",
+              "type": "IS_A",
+              "target": "Shape:HCN",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HV_01",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:HCN",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HV_02",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:HCN",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HV",
+              "type": "IS_A",
+              "target": "Shape:HTHOI",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HV_03",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:HTHOI",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HV_04",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:HTHOI",
+              "properties": {}
+            },
+            {
+              "source": "Shape:TQ",
+              "type": "HAS_PROPERTY",
+              "target": "Property:FOUR_SIDES",
+              "properties": {}
+            },
+            {
+              "source": "Shape:TQ",
+              "type": "HAS_PROPERTY",
+              "target": "Property:ANGLE_SUM_360",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HT",
+              "type": "HAS_PROPERTY",
+              "target": "Property:EXACTLY_ONE_PARALLEL_PAIR",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HT_01",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:EXACTLY_ONE_PARALLEL_PAIR",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HT",
+              "type": "HAS_PROPERTY",
+              "target": "Property:LEG_ADJACENT_ANGLES_SUPPLEMENTARY",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTC",
+              "type": "HAS_PROPERTY",
+              "target": "Property:LEGS_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTC",
+              "type": "HAS_PROPERTY",
+              "target": "Property:BASE_ANGLES_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HTC_01",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:BASE_ANGLES_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTC",
+              "type": "HAS_PROPERTY",
+              "target": "Property:DIAGONALS_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HCN",
+              "type": "HAS_PROPERTY",
+              "target": "Property:DIAGONALS_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HTC_02",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:DIAGONALS_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HCN_03",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:DIAGONALS_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HV_04",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:DIAGONALS_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HBH",
+              "type": "HAS_PROPERTY",
+              "target": "Property:TWO_PARALLEL_PAIRS",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HBH_01",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:TWO_PARALLEL_PAIRS",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HBH",
+              "type": "HAS_PROPERTY",
+              "target": "Property:OPPOSITE_SIDES_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HBH_02",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:OPPOSITE_SIDES_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HBH",
+              "type": "HAS_PROPERTY",
+              "target": "Property:OPPOSITE_ANGLES_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HBH_03",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:OPPOSITE_ANGLES_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HBH",
+              "type": "HAS_PROPERTY",
+              "target": "Property:ADJACENT_ANGLES_SUPPLEMENTARY",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HBH",
+              "type": "HAS_PROPERTY",
+              "target": "Property:DIAGONALS_BISECT_EACH_OTHER",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HBH_04",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:DIAGONALS_BISECT_EACH_OTHER",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HCN",
+              "type": "HAS_PROPERTY",
+              "target": "Property:FOUR_RIGHT_ANGLES",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HV_05",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:FOUR_RIGHT_ANGLES",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTHOI",
+              "type": "HAS_PROPERTY",
+              "target": "Property:FOUR_EQUAL_SIDES",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HTHOI_01",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:FOUR_EQUAL_SIDES",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HV_05",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:FOUR_EQUAL_SIDES",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTHOI",
+              "type": "HAS_PROPERTY",
+              "target": "Property:DIAGONALS_PERPENDICULAR",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HTHOI_03",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:DIAGONALS_PERPENDICULAR",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HV_02",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:DIAGONALS_PERPENDICULAR",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTHOI",
+              "type": "HAS_PROPERTY",
+              "target": "Property:DIAGONALS_BISECT_ANGLES",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HCN_01",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:THREE_RIGHT_ANGLES",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HCN_02",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:HAS_RIGHT_ANGLE",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HV_03",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:HAS_RIGHT_ANGLE",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HTHOI_02",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:ADJACENT_SIDES_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HV_01",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:ADJACENT_SIDES_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HT",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HT_01",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTC",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HTC_01",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTC",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HTC_02",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HBH",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HBH_01",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HBH",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HBH_02",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HBH",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HBH_03",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HBH",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HBH_04",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HCN",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HCN_01",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HCN",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HCN_02",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HCN",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HCN_03",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTHOI",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HTHOI_01",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTHOI",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HTHOI_02",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTHOI",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HTHOI_03",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HV",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HV_01",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HV",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HV_02",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HV",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HV_03",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HV",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HV_04",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HV",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HV_05",
+              "properties": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q02",
+      "status": "PASS",
+      "rows": [
+        {
+          "property_id": "ADJACENT_ANGLES_SUPPLEMENTARY",
+          "property_name": "Mọi cặp góc kề nhau bù nhau",
+          "declared_at": [
+            "HBH"
+          ]
+        },
+        {
+          "property_id": "ANGLE_SUM_360",
+          "property_name": "Tổng bốn góc trong bằng 360°",
+          "declared_at": [
+            "TQ"
+          ]
+        },
+        {
+          "property_id": "DIAGONALS_BISECT_ANGLES",
+          "property_name": "Các đường chéo phân giác các góc",
+          "declared_at": [
+            "HTHOI"
+          ]
+        },
+        {
+          "property_id": "DIAGONALS_BISECT_EACH_OTHER",
+          "property_name": "Hai đường chéo chia đôi nhau",
+          "declared_at": [
+            "HBH"
+          ]
+        },
+        {
+          "property_id": "DIAGONALS_EQUAL",
+          "property_name": "Hai đường chéo bằng nhau",
+          "declared_at": [
+            "HCN"
+          ]
+        },
+        {
+          "property_id": "DIAGONALS_PERPENDICULAR",
+          "property_name": "Hai đường chéo vuông góc",
+          "declared_at": [
+            "HTHOI"
+          ]
+        },
+        {
+          "property_id": "FOUR_EQUAL_SIDES",
+          "property_name": "Có bốn cạnh bằng nhau",
+          "declared_at": [
+            "HTHOI"
+          ]
+        },
+        {
+          "property_id": "FOUR_RIGHT_ANGLES",
+          "property_name": "Có bốn góc vuông",
+          "declared_at": [
+            "HCN"
+          ]
+        },
+        {
+          "property_id": "FOUR_SIDES",
+          "property_name": "Có bốn cạnh",
+          "declared_at": [
+            "TQ"
+          ]
+        },
+        {
+          "property_id": "OPPOSITE_ANGLES_EQUAL",
+          "property_name": "Hai cặp góc đối bằng nhau",
+          "declared_at": [
+            "HBH"
+          ]
+        },
+        {
+          "property_id": "OPPOSITE_SIDES_EQUAL",
+          "property_name": "Hai cặp cạnh đối bằng nhau",
+          "declared_at": [
+            "HBH"
+          ]
+        },
+        {
+          "property_id": "TWO_PARALLEL_PAIRS",
+          "property_name": "Có hai cặp cạnh đối song song",
+          "declared_at": [
+            "HBH"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q03",
+      "status": "PASS",
+      "rows": [
+        {
+          "shape_id": "HCN",
+          "shape_name": "Hình chữ nhật"
+        },
+        {
+          "shape_id": "HTHOI",
+          "shape_name": "Hình thoi"
+        }
+      ]
+    },
+    {
+      "id": "Q04",
+      "status": "PASS",
+      "rows": [
+        {
+          "shape_id": "HBH",
+          "shape_name": "Hình bình hành"
+        },
+        {
+          "shape_id": "HCN",
+          "shape_name": "Hình chữ nhật"
+        },
+        {
+          "shape_id": "HTHOI",
+          "shape_name": "Hình thoi"
+        },
+        {
+          "shape_id": "TQ",
+          "shape_name": "Tứ giác"
+        }
+      ]
+    },
+    {
+      "id": "Q05",
+      "status": "PASS",
+      "rows": [
+        {
+          "shape_id": "HCN",
+          "shape_name": "Hình chữ nhật"
+        },
+        {
+          "shape_id": "HTHOI",
+          "shape_name": "Hình thoi"
+        },
+        {
+          "shape_id": "HV",
+          "shape_name": "Hình vuông"
+        }
+      ]
+    },
+    {
+      "id": "Q06",
+      "status": "PASS",
+      "rows": [
+        {
+          "shape_id": "HTHOI",
+          "shape_name": "Hình thoi"
+        },
+        {
+          "shape_id": "HV",
+          "shape_name": "Hình vuông"
+        }
+      ]
+    },
+    {
+      "id": "Q07",
+      "status": "PASS",
+      "rows": [
+        {
+          "shape_id": "HCN",
+          "shape_name": "Hình chữ nhật"
+        },
+        {
+          "shape_id": "HV",
+          "shape_name": "Hình vuông"
+        }
+      ]
+    },
+    {
+      "id": "Q08",
+      "status": "PASS",
+      "rows": [
+        {
+          "shape_id": "HCN",
+          "shape_name": "Hình chữ nhật"
+        },
+        {
+          "shape_id": "HTC",
+          "shape_name": "Hình thang cân"
+        },
+        {
+          "shape_id": "HV",
+          "shape_name": "Hình vuông"
+        }
+      ]
+    },
+    {
+      "id": "Q09",
+      "status": "PASS",
+      "rows": [
+        {
+          "path": {
+            "nodes": [
+              "Shape:TQ",
+              "Shape:HBH",
+              "Shape:HCN",
+              "Shape:HV"
+            ],
+            "types": [
+              "IS_A",
+              "IS_A",
+              "IS_A"
+            ]
+          },
+          "node_ids": [
+            "TQ",
+            "HBH",
+            "HCN",
+            "HV"
+          ],
+          "edge_count": 3
+        },
+        {
+          "path": {
+            "nodes": [
+              "Shape:TQ",
+              "Shape:HBH",
+              "Shape:HTHOI",
+              "Shape:HV"
+            ],
+            "types": [
+              "IS_A",
+              "IS_A",
+              "IS_A"
+            ]
+          },
+          "node_ids": [
+            "TQ",
+            "HBH",
+            "HTHOI",
+            "HV"
+          ],
+          "edge_count": 3
+        }
+      ]
+    },
+    {
+      "id": "Q10",
+      "status": "PASS",
+      "rows": [
+        {
+          "property_id": "ADJACENT_ANGLES_SUPPLEMENTARY",
+          "property_name": "Mọi cặp góc kề nhau bù nhau"
+        },
+        {
+          "property_id": "ANGLE_SUM_360",
+          "property_name": "Tổng bốn góc trong bằng 360°"
+        },
+        {
+          "property_id": "DIAGONALS_BISECT_EACH_OTHER",
+          "property_name": "Hai đường chéo chia đôi nhau"
+        },
+        {
+          "property_id": "DIAGONALS_EQUAL",
+          "property_name": "Hai đường chéo bằng nhau"
+        },
+        {
+          "property_id": "FOUR_RIGHT_ANGLES",
+          "property_name": "Có bốn góc vuông"
+        },
+        {
+          "property_id": "FOUR_SIDES",
+          "property_name": "Có bốn cạnh"
+        },
+        {
+          "property_id": "OPPOSITE_ANGLES_EQUAL",
+          "property_name": "Hai cặp góc đối bằng nhau"
+        },
+        {
+          "property_id": "OPPOSITE_SIDES_EQUAL",
+          "property_name": "Hai cặp cạnh đối bằng nhau"
+        },
+        {
+          "property_id": "TWO_PARALLEL_PAIRS",
+          "property_name": "Có hai cặp cạnh đối song song"
+        }
+      ]
+    },
+    {
+      "id": "Q11",
+      "status": "PASS",
+      "rows": [
+        {
+          "property_id": "ADJACENT_ANGLES_SUPPLEMENTARY",
+          "property_name": "Mọi cặp góc kề nhau bù nhau"
+        },
+        {
+          "property_id": "ANGLE_SUM_360",
+          "property_name": "Tổng bốn góc trong bằng 360°"
+        },
+        {
+          "property_id": "DIAGONALS_BISECT_ANGLES",
+          "property_name": "Các đường chéo phân giác các góc"
+        },
+        {
+          "property_id": "DIAGONALS_BISECT_EACH_OTHER",
+          "property_name": "Hai đường chéo chia đôi nhau"
+        },
+        {
+          "property_id": "DIAGONALS_PERPENDICULAR",
+          "property_name": "Hai đường chéo vuông góc"
+        },
+        {
+          "property_id": "FOUR_EQUAL_SIDES",
+          "property_name": "Có bốn cạnh bằng nhau"
+        },
+        {
+          "property_id": "FOUR_SIDES",
+          "property_name": "Có bốn cạnh"
+        },
+        {
+          "property_id": "OPPOSITE_ANGLES_EQUAL",
+          "property_name": "Hai cặp góc đối bằng nhau"
+        },
+        {
+          "property_id": "OPPOSITE_SIDES_EQUAL",
+          "property_name": "Hai cặp cạnh đối bằng nhau"
+        },
+        {
+          "property_id": "TWO_PARALLEL_PAIRS",
+          "property_name": "Có hai cặp cạnh đối song song"
+        }
+      ]
+    },
+    {
+      "id": "Q12",
+      "status": "PASS",
+      "rows": [
+        {
+          "shape_id": "HTHOI",
+          "shape_name": "Hình thoi"
+        },
+        {
+          "shape_id": "HV",
+          "shape_name": "Hình vuông"
+        }
+      ]
+    },
+    {
+      "id": "Q13",
+      "status": "PASS",
+      "rows": [
+        {
+          "shape_id": "HBH",
+          "outgoing_is_a": 1,
+          "direct_property_count": 5,
+          "condition_count": 4,
+          "incoming_is_a": 2,
+          "incoming_requires_shape": 4,
+          "in_degree": 6,
+          "out_degree": 10
+        },
+        {
+          "shape_id": "HCN",
+          "outgoing_is_a": 1,
+          "direct_property_count": 2,
+          "condition_count": 3,
+          "incoming_is_a": 1,
+          "incoming_requires_shape": 2,
+          "in_degree": 3,
+          "out_degree": 6
+        },
+        {
+          "shape_id": "HT",
+          "outgoing_is_a": 1,
+          "direct_property_count": 2,
+          "condition_count": 1,
+          "incoming_is_a": 1,
+          "incoming_requires_shape": 2,
+          "in_degree": 3,
+          "out_degree": 4
+        },
+        {
+          "shape_id": "HTC",
+          "outgoing_is_a": 1,
+          "direct_property_count": 3,
+          "condition_count": 2,
+          "incoming_is_a": 0,
+          "incoming_requires_shape": 0,
+          "in_degree": 0,
+          "out_degree": 6
+        },
+        {
+          "shape_id": "HTHOI",
+          "outgoing_is_a": 1,
+          "direct_property_count": 3,
+          "condition_count": 3,
+          "incoming_is_a": 1,
+          "incoming_requires_shape": 2,
+          "in_degree": 3,
+          "out_degree": 7
+        },
+        {
+          "shape_id": "HV",
+          "outgoing_is_a": 2,
+          "direct_property_count": 0,
+          "condition_count": 5,
+          "incoming_is_a": 0,
+          "incoming_requires_shape": 0,
+          "in_degree": 0,
+          "out_degree": 7
+        },
+        {
+          "shape_id": "TQ",
+          "outgoing_is_a": 0,
+          "direct_property_count": 2,
+          "condition_count": 0,
+          "incoming_is_a": 2,
+          "incoming_requires_shape": 8,
+          "in_degree": 10,
+          "out_degree": 2
+        }
+      ]
+    },
+    {
+      "id": "Q14",
+      "status": "PASS",
+      "depth_checks": [
+        {
+          "depth": 1,
+          "nodes": 8,
+          "relationships": 11,
+          "status": "PASS"
+        },
+        {
+          "depth": 2,
+          "nodes": 23,
+          "relationships": 43,
+          "status": "PASS"
+        },
+        {
+          "depth": 3,
+          "nodes": 39,
+          "relationships": 71,
+          "status": "PASS"
+        }
+      ],
+      "rows": [
+        {
+          "nodes": [
+            {
+              "key": "Shape:HV",
+              "labels": [
+                "ProjectEntity",
+                "Shape"
+              ],
+              "properties": {
+                "display_order": 7,
+                "name": "Hình vuông",
+                "definition": "Tứ giác có bốn cạnh bằng nhau và bốn góc vuông.",
+                "source_ref": "https://mathworld.wolfram.com/Square.html",
+                "id": "HV",
+                "search_name": "hinh vuong",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Shape:HCN",
+              "labels": [
+                "ProjectEntity",
+                "Shape"
+              ],
+              "properties": {
+                "display_order": 5,
+                "name": "Hình chữ nhật",
+                "definition": "Tứ giác có bốn góc vuông; bao gồm trường hợp đặc biệt là hình vuông.",
+                "source_ref": "https://mathworld.wolfram.com/Rectangle.html",
+                "id": "HCN",
+                "search_name": "hinh chu nhat",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Shape:HBH",
+              "labels": [
+                "ProjectEntity",
+                "Shape"
+              ],
+              "properties": {
+                "display_order": 4,
+                "name": "Hình bình hành",
+                "definition": "Tứ giác có hai cặp cạnh đối song song.",
+                "source_ref": "https://mathworld.wolfram.com/Parallelogram.html",
+                "id": "HBH",
+                "search_name": "hinh binh hanh",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Shape:TQ",
+              "labels": [
+                "ProjectEntity",
+                "Shape"
+              ],
+              "properties": {
+                "display_order": 1,
+                "name": "Tứ giác",
+                "definition": "Đa giác lồi, không suy biến có bốn cạnh trong mặt phẳng.",
+                "source_ref": "https://mathworld.wolfram.com/Quadrilateral.html",
+                "id": "TQ",
+                "search_name": "tu giac",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Shape:HTHOI",
+              "labels": [
+                "ProjectEntity",
+                "Shape"
+              ],
+              "properties": {
+                "display_order": 6,
+                "name": "Hình thoi",
+                "definition": "Tứ giác có bốn cạnh bằng nhau; bao gồm trường hợp đặc biệt là hình vuông.",
+                "source_ref": "https://mathworld.wolfram.com/Rhombus.html",
+                "id": "HTHOI",
+                "search_name": "hinh thoi",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:TWO_PARALLEL_PAIRS",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "AB ∥ CD; AD ∥ BC",
+                "name": "Có hai cặp cạnh đối song song",
+                "description": "Cả hai cặp cạnh đối của tứ giác song song.",
+                "source_ref": "https://mathworld.wolfram.com/Parallelogram.html",
+                "id": "TWO_PARALLEL_PAIRS",
+                "category": "side",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:OPPOSITE_SIDES_EQUAL",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "AB = CD; AD = BC",
+                "name": "Hai cặp cạnh đối bằng nhau",
+                "description": "Mỗi cạnh bằng cạnh đối diện của nó.",
+                "source_ref": "https://mathworld.wolfram.com/Parallelogram.html",
+                "id": "OPPOSITE_SIDES_EQUAL",
+                "category": "side",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:OPPOSITE_ANGLES_EQUAL",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "∠A = ∠C; ∠B = ∠D",
+                "name": "Hai cặp góc đối bằng nhau",
+                "description": "Cả hai cặp góc đối của tứ giác có số đo bằng nhau.",
+                "source_ref": "https://mathworld.wolfram.com/Parallelogram.html",
+                "id": "OPPOSITE_ANGLES_EQUAL",
+                "category": "angle",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:ADJACENT_ANGLES_SUPPLEMENTARY",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "∠A + ∠B = ∠B + ∠C = ∠C + ∠D = ∠D + ∠A = 180°",
+                "name": "Mọi cặp góc kề nhau bù nhau",
+                "description": "Mỗi cặp góc ở hai đỉnh liên tiếp có tổng 180°.",
+                "source_ref": "https://mathworld.wolfram.com/Parallelogram.html",
+                "id": "ADJACENT_ANGLES_SUPPLEMENTARY",
+                "category": "angle",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:DIAGONALS_BISECT_EACH_OTHER",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "O = AC ∩ BD; OA = OC; OB = OD",
+                "name": "Hai đường chéo chia đôi nhau",
+                "description": "Giao điểm của hai đường chéo là trung điểm của mỗi đường, không chỉ của một đường.",
+                "source_ref": "https://mathworld.wolfram.com/Parallelogram.html",
+                "id": "DIAGONALS_BISECT_EACH_OTHER",
+                "category": "diagonal",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HBH_01",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình bình hành bằng cạnh song song",
+                "statement": "Tứ giác có hai cặp cạnh đối song song là hình bình hành.",
+                "source_ref": "https://mathworld.wolfram.com/Parallelogram.html",
+                "id": "C_HBH_01",
+                "logic": "AND",
+                "explanation": "Đúng theo định nghĩa hình bình hành.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HBH_02",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình bình hành bằng cạnh bằng nhau",
+                "statement": "Tứ giác có hai cặp cạnh đối bằng nhau là hình bình hành.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HBH_02",
+                "logic": "AND",
+                "explanation": "Đường chéo chia tứ giác thành hai tam giác bằng nhau theo cạnh-cạnh-cạnh; các góc so le trong suy ra hai cặp cạnh song song.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HBH_03",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình bình hành bằng góc đối",
+                "statement": "Tứ giác có hai cặp góc đối bằng nhau là hình bình hành.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HBH_03",
+                "logic": "AND",
+                "explanation": "Tổng góc 360° suy ra các góc kề bù nhau; đảo của tính chất góc trong cùng phía cho hai cặp cạnh song song.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HBH_04",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình bình hành bằng trung điểm đường chéo",
+                "statement": "Tứ giác có hai đường chéo chia đôi nhau là hình bình hành.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HBH_04",
+                "logic": "AND",
+                "explanation": "Các cặp tam giác đối đỉnh bằng nhau theo cạnh-góc-cạnh tại giao điểm; suy ra các cạnh đối song song.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HCN_02",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình chữ nhật từ hình bình hành có góc vuông",
+                "statement": "Hình bình hành có một góc vuông là hình chữ nhật.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HCN_02",
+                "logic": "AND",
+                "explanation": "Các góc đối bằng nhau và góc kề bù nhau khiến cả bốn góc đều vuông.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HCN_03",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình chữ nhật từ hình bình hành có đường chéo bằng nhau",
+                "statement": "Hình bình hành có hai đường chéo bằng nhau là hình chữ nhật.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HCN_03",
+                "logic": "AND",
+                "explanation": "Trong hình bình hành, các tam giác tạo bởi cạnh và hai đường chéo bằng nhau theo cạnh-cạnh-cạnh; góc kề bằng nhau và bù nhau nên bằng 90°.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HTHOI_02",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình thoi từ hai cạnh kề",
+                "statement": "Hình bình hành có hai cạnh kề bằng nhau là hình thoi.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HTHOI_02",
+                "logic": "AND",
+                "explanation": "Cạnh đối của hình bình hành bằng nhau nên một cặp cạnh kề bằng nhau dẫn tới cả bốn cạnh bằng nhau.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HTHOI_03",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình thoi từ đường chéo vuông góc",
+                "statement": "Hình bình hành có hai đường chéo vuông góc là hình thoi.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HTHOI_03",
+                "logic": "AND",
+                "explanation": "Đường chéo chia đôi nhau; các tam giác vuông tại giao điểm có hai cạnh góc vuông tương ứng bằng nhau, suy ra bốn cạnh bằng nhau.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:DIAGONALS_EQUAL",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "AC = BD",
+                "name": "Hai đường chéo bằng nhau",
+                "description": "Độ dài hai đoạn nối các đỉnh đối diện bằng nhau; không tự nó đủ nhận biết hình chữ nhật.",
+                "source_ref": "https://mathworld.wolfram.com/Rectangle.html; https://mathworld.wolfram.com/IsoscelesTrapezoid.html",
+                "id": "DIAGONALS_EQUAL",
+                "category": "diagonal",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Shape:HTC",
+              "labels": [
+                "ProjectEntity",
+                "Shape"
+              ],
+              "properties": {
+                "display_order": 3,
+                "name": "Hình thang cân",
+                "definition": "Hình thang có hai góc kề một đáy bằng nhau.",
+                "source_ref": "https://mathworld.wolfram.com/IsoscelesTrapezoid.html",
+                "id": "HTC",
+                "search_name": "hinh thang can",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HTC_02",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình thang cân bằng đường chéo",
+                "statement": "Hình thang có hai đường chéo bằng nhau là hình thang cân.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HTC_02",
+                "logic": "AND",
+                "explanation": "Phải có giả thiết hình thang; tính bằng nhau của đường chéo xác định tính đối xứng giữa hai cạnh bên và hai góc ở đáy.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HV_04",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình vuông từ đường chéo bằng nhau của hình thoi",
+                "statement": "Hình thoi có hai đường chéo bằng nhau là hình vuông.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HV_04",
+                "logic": "AND",
+                "explanation": "Hình thoi là hình bình hành; đường chéo bằng nhau suy ra hình chữ nhật. Đồng thời bốn cạnh bằng nhau nên là hình vuông.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:FOUR_RIGHT_ANGLES",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "∠A = ∠B = ∠C = ∠D = 90°",
+                "name": "Có bốn góc vuông",
+                "description": "Bốn góc trong của tứ giác đều bằng 90°.",
+                "source_ref": "https://mathworld.wolfram.com/Rectangle.html",
+                "id": "FOUR_RIGHT_ANGLES",
+                "category": "angle",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HV_05",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình vuông theo hai nhóm giả thiết đồng thời",
+                "statement": "Tứ giác có bốn cạnh bằng nhau và bốn góc vuông là hình vuông.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HV_05",
+                "logic": "AND",
+                "explanation": "Phải thỏa mãn đồng thời cả hai Property; nhiều dấu hiệu đủ khác nhau của HV được hiểu theo OR.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HCN_01",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình chữ nhật bằng ba góc vuông",
+                "statement": "Tứ giác có ít nhất ba góc vuông là hình chữ nhật.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HCN_01",
+                "logic": "AND",
+                "explanation": "Tổng bốn góc bằng 360° nên góc còn lại bằng 90°.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:THREE_RIGHT_ANGLES",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "Ba trong bốn góc bằng 90°",
+                "name": "Có ít nhất ba góc vuông",
+                "description": "Giả thiết nhận biết; tổng góc 360° buộc góc thứ tư cũng vuông.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "THREE_RIGHT_ANGLES",
+                "category": "angle",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:HAS_RIGHT_ANGLE",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "Tồn tại một góc bằng 90°",
+                "name": "Có ít nhất một góc vuông",
+                "description": "Giả thiết nhận biết khi đã biết ngữ cảnh hình bình hành hoặc hình thoi.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "HAS_RIGHT_ANGLE",
+                "category": "angle",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HV_01",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình vuông từ hai cạnh kề của hình chữ nhật",
+                "statement": "Hình chữ nhật có hai cạnh kề bằng nhau là hình vuông.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HV_01",
+                "logic": "AND",
+                "explanation": "Cạnh đối bằng nhau khiến cả bốn cạnh bằng nhau; bốn góc vuông đã có từ ngữ cảnh.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:ADJACENT_SIDES_EQUAL",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "Ví dụ AB = BC",
+                "name": "Có một cặp cạnh kề bằng nhau",
+                "description": "Giả thiết nhận biết khi đã biết ngữ cảnh hình bình hành hoặc hình chữ nhật.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "ADJACENT_SIDES_EQUAL",
+                "category": "side",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HV_02",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình vuông từ đường chéo hình chữ nhật",
+                "statement": "Hình chữ nhật có hai đường chéo vuông góc là hình vuông.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HV_02",
+                "logic": "AND",
+                "explanation": "Hình chữ nhật là hình bình hành; đường chéo vuông góc suy ra hình thoi. Đồng thời là hình thoi và hình chữ nhật nên là hình vuông.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:DIAGONALS_PERPENDICULAR",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "AC ⟂ BD",
+                "name": "Hai đường chéo vuông góc",
+                "description": "Hai đường chéo tạo góc 90° tại giao điểm; không tự nó đủ nhận biết hình thoi.",
+                "source_ref": "https://mathworld.wolfram.com/Rhombus.html",
+                "id": "DIAGONALS_PERPENDICULAR",
+                "category": "diagonal",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:FOUR_EQUAL_SIDES",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "AB = BC = CD = DA",
+                "name": "Có bốn cạnh bằng nhau",
+                "description": "Độ dài bốn cạnh bằng nhau; không khẳng định các góc đều vuông.",
+                "source_ref": "https://mathworld.wolfram.com/Rhombus.html",
+                "id": "FOUR_EQUAL_SIDES",
+                "category": "side",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HTHOI_01",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình thoi bằng bốn cạnh",
+                "statement": "Tứ giác có bốn cạnh bằng nhau là hình thoi.",
+                "source_ref": "https://mathworld.wolfram.com/Rhombus.html",
+                "id": "C_HTHOI_01",
+                "logic": "AND",
+                "explanation": "Theo định nghĩa; hai cặp cạnh đối bằng nhau cũng đảm bảo đây là hình bình hành.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:DIAGONALS_BISECT_ANGLES",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "∠BAC = ∠CAD; ∠BCA = ∠ACD; ∠ABD = ∠DBC; ∠ADB = ∠BDC",
+                "name": "Các đường chéo phân giác các góc",
+                "description": "Mỗi đường chéo phân giác góc trong tại hai đầu của nó.",
+                "source_ref": "https://mathworld.wolfram.com/Rhombus.html",
+                "id": "DIAGONALS_BISECT_ANGLES",
+                "category": "diagonal_angle",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HV_03",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình vuông từ góc vuông của hình thoi",
+                "statement": "Hình thoi có một góc vuông là hình vuông.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#7",
+                "id": "C_HV_03",
+                "logic": "AND",
+                "explanation": "Hình thoi là hình bình hành; một góc vuông suy ra bốn góc vuông. Bốn cạnh bằng nhau đã có từ ngữ cảnh.",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Shape:HT",
+              "labels": [
+                "ProjectEntity",
+                "Shape"
+              ],
+              "properties": {
+                "display_order": 2,
+                "name": "Hình thang",
+                "definition": "Tứ giác có đúng một cặp cạnh đối song song, theo quy ước phân loại loại trừ của project.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#2",
+                "id": "HT",
+                "search_name": "hinh thang",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:FOUR_SIDES",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "AB, BC, CD, DA",
+                "name": "Có bốn cạnh",
+                "description": "Đường biên của tứ giác gồm bốn đoạn thẳng nối bốn đỉnh liên tiếp.",
+                "source_ref": "https://mathworld.wolfram.com/Quadrilateral.html",
+                "id": "FOUR_SIDES",
+                "category": "structure",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Property:ANGLE_SUM_360",
+              "labels": [
+                "ProjectEntity",
+                "Property"
+              ],
+              "properties": {
+                "notation": "∠A + ∠B + ∠C + ∠D = 360°",
+                "name": "Tổng bốn góc trong bằng 360°",
+                "description": "Áp dụng cho tứ giác lồi không suy biến trong mặt phẳng.",
+                "source_ref": "https://mathworld.wolfram.com/Quadrilateral.html",
+                "id": "ANGLE_SUM_360",
+                "category": "angle",
+                "dataset": "quadrilateral-v1"
+              }
+            },
+            {
+              "key": "Condition:C_HT_01",
+              "labels": [
+                "Condition",
+                "ProjectEntity"
+              ],
+              "properties": {
+                "name": "Nhận biết hình thang theo định nghĩa",
+                "statement": "Tứ giác có đúng một cặp cạnh đối song song là hình thang.",
+                "source_ref": "project:docs/PHASE_1_PHAN_TICH.md#2",
+                "id": "C_HT_01",
+                "logic": "AND",
+                "explanation": "Áp dụng định nghĩa hình thang loại trừ của project; hai cặp song song thuộc nhánh hình bình hành.",
+                "dataset": "quadrilateral-v1"
+              }
+            }
+          ],
+          "relationships": [
+            {
+              "source": "Shape:TQ",
+              "type": "HAS_PROPERTY",
+              "target": "Property:FOUR_SIDES",
+              "properties": {}
+            },
+            {
+              "source": "Shape:TQ",
+              "type": "HAS_PROPERTY",
+              "target": "Property:ANGLE_SUM_360",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HT",
+              "type": "IS_A",
+              "target": "Shape:TQ",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HT",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HT_01",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTC",
+              "type": "IS_A",
+              "target": "Shape:HT",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTC",
+              "type": "HAS_PROPERTY",
+              "target": "Property:DIAGONALS_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTC",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HTC_02",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HBH",
+              "type": "IS_A",
+              "target": "Shape:TQ",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HBH",
+              "type": "HAS_PROPERTY",
+              "target": "Property:TWO_PARALLEL_PAIRS",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HBH",
+              "type": "HAS_PROPERTY",
+              "target": "Property:OPPOSITE_SIDES_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HBH",
+              "type": "HAS_PROPERTY",
+              "target": "Property:OPPOSITE_ANGLES_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HBH",
+              "type": "HAS_PROPERTY",
+              "target": "Property:ADJACENT_ANGLES_SUPPLEMENTARY",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HBH",
+              "type": "HAS_PROPERTY",
+              "target": "Property:DIAGONALS_BISECT_EACH_OTHER",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HBH",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HBH_01",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HBH",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HBH_02",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HBH",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HBH_03",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HBH",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HBH_04",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HCN",
+              "type": "IS_A",
+              "target": "Shape:HBH",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HCN",
+              "type": "HAS_PROPERTY",
+              "target": "Property:DIAGONALS_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HCN",
+              "type": "HAS_PROPERTY",
+              "target": "Property:FOUR_RIGHT_ANGLES",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HCN",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HCN_01",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HCN",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HCN_02",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HCN",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HCN_03",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTHOI",
+              "type": "IS_A",
+              "target": "Shape:HBH",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTHOI",
+              "type": "HAS_PROPERTY",
+              "target": "Property:FOUR_EQUAL_SIDES",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTHOI",
+              "type": "HAS_PROPERTY",
+              "target": "Property:DIAGONALS_PERPENDICULAR",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTHOI",
+              "type": "HAS_PROPERTY",
+              "target": "Property:DIAGONALS_BISECT_ANGLES",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTHOI",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HTHOI_01",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTHOI",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HTHOI_02",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HTHOI",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HTHOI_03",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HV",
+              "type": "IS_A",
+              "target": "Shape:HCN",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HV",
+              "type": "IS_A",
+              "target": "Shape:HTHOI",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HV",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HV_01",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HV",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HV_02",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HV",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HV_03",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HV",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HV_04",
+              "properties": {}
+            },
+            {
+              "source": "Shape:HV",
+              "type": "HAS_CONDITION",
+              "target": "Condition:C_HV_05",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HT_01",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:TQ",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HTC_02",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:HT",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HTC_02",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:DIAGONALS_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HBH_01",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:TQ",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HBH_01",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:TWO_PARALLEL_PAIRS",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HBH_02",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:TQ",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HBH_02",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:OPPOSITE_SIDES_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HBH_03",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:TQ",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HBH_03",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:OPPOSITE_ANGLES_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HBH_04",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:TQ",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HBH_04",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:DIAGONALS_BISECT_EACH_OTHER",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HCN_01",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:TQ",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HCN_01",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:THREE_RIGHT_ANGLES",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HCN_02",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:HBH",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HCN_02",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:HAS_RIGHT_ANGLE",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HCN_03",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:HBH",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HCN_03",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:DIAGONALS_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HTHOI_01",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:TQ",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HTHOI_01",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:FOUR_EQUAL_SIDES",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HTHOI_02",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:HBH",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HTHOI_02",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:ADJACENT_SIDES_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HTHOI_03",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:HBH",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HTHOI_03",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:DIAGONALS_PERPENDICULAR",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HV_01",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:HCN",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HV_01",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:ADJACENT_SIDES_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HV_02",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:HCN",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HV_02",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:DIAGONALS_PERPENDICULAR",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HV_03",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:HTHOI",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HV_03",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:HAS_RIGHT_ANGLE",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HV_04",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:HTHOI",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HV_04",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:DIAGONALS_EQUAL",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HV_05",
+              "type": "REQUIRES_SHAPE",
+              "target": "Shape:TQ",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HV_05",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:FOUR_RIGHT_ANGLES",
+              "properties": {}
+            },
+            {
+              "source": "Condition:C_HV_05",
+              "type": "REQUIRES_PROPERTY",
+              "target": "Property:FOUR_EQUAL_SIDES",
+              "properties": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q15",
+      "status": "PASS",
+      "rows": [
+        {
+          "path": {
+            "nodes": [
+              "Shape:HV",
+              "Shape:HCN",
+              "Shape:HBH",
+              "Property:DIAGONALS_BISECT_EACH_OTHER"
+            ],
+            "types": [
+              "IS_A",
+              "IS_A",
+              "HAS_PROPERTY"
+            ]
+          },
+          "node_ids": [
+            "HV",
+            "HCN",
+            "HBH",
+            "DIAGONALS_BISECT_EACH_OTHER"
+          ],
+          "declared_at": "HBH"
+        },
+        {
+          "path": {
+            "nodes": [
+              "Shape:HV",
+              "Shape:HTHOI",
+              "Shape:HBH",
+              "Property:DIAGONALS_BISECT_EACH_OTHER"
+            ],
+            "types": [
+              "IS_A",
+              "IS_A",
+              "HAS_PROPERTY"
+            ]
+          },
+          "node_ids": [
+            "HV",
+            "HTHOI",
+            "HBH",
+            "DIAGONALS_BISECT_EACH_OTHER"
+          ],
+          "declared_at": "HBH"
+        }
+      ]
+    }
+  ]
+}

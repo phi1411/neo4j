@@ -1,0 +1,11 @@
+{% extends 'base.html' %}{% from '_graph.html' import graph_panel %}{% block content %}
+<div class="page-intro compact"><p class="eyebrow">CYPHER · TRUY VẤN CHỈ ĐỌC</p><h1>Truy vấn Neo4j</h1><p class="lead">Từ tra cứu tính chất tới traversal và giải thích nguồn kế thừa. Chỉ chạy các truy vấn trong danh mục đã duyệt.</p></div>
+<div id="queries-state" class="state" role="status">Đang tải danh mục truy vấn…</div>
+<div id="query-workspace" hidden>
+ <label for="query-select" class="query-picker">Chọn truy vấn<select id="query-select"></select></label>
+ <section class="panel"><p id="query-code" class="eyebrow"></p><h2 id="query-title"></h2><p id="query-description"></p><p class="convention"><strong>Cách đọc kết quả:</strong> <span id="query-explanation"></span></p><details open><summary>Câu lệnh Cypher</summary><pre><code id="cypher"></code></pre></details><form id="query-form" class="inline-form"><div id="query-parameters" class="inline-form"></div><button id="query-run" class="button primary" type="submit">Chạy truy vấn</button></form><p class="muted">Dataset được cố định ở backend. Mã Cypher hiển thị để giải thích, không phải ô nhập lệnh.</p></section>
+ <section class="panel" id="query-results"><div class="panel-heading"><h2>Kết quả</h2><span id="query-result-count" class="badge" hidden></span></div><div id="query-result-state" class="state" role="status" aria-live="polite">Chọn tham số và bấm “Chạy truy vấn”.</div><div id="query-table" class="table-wrap"></div></section>
+ <div id="query-graph-wrap" hidden>{{ graph_panel('query-graph', 'Graph kết quả truy vấn') }}</div>
+</div>
+<script id="query-sources" type="application/json">{{ query_sources | tojson }}</script>
+{% endblock %}

@@ -1,0 +1,559 @@
+{
+  "status": "PASS",
+  "transport": "real HTTP",
+  "base_url": "http://127.0.0.1:5002",
+  "checked_at": "2026-10-06T23:48:38.410542+07:00",
+  "checks": [
+    {
+      "name": "health",
+      "method": "GET",
+      "path": "/api/health",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "database": "quadrilateral",
+        "dataset": "quadrilateral-v1",
+        "flask": "running",
+        "neo4j": "connected"
+      },
+      "response_sha256": "dc74003794d12d7f3727eaca6aef0ae2316a78e7e5f392555cb21098387ed1c0"
+    },
+    {
+      "name": "stats",
+      "method": "GET",
+      "path": "/api/stats",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "node_counts": {
+          "Condition": 18,
+          "Property": 19,
+          "Shape": 7
+        },
+        "relationship_counts": {
+          "HAS_CONDITION": 18,
+          "HAS_PROPERTY": 17,
+          "IS_A": 7,
+          "REQUIRES_PROPERTY": 19,
+          "REQUIRES_SHAPE": 18
+        },
+        "total_nodes": 44,
+        "total_relationships": 79
+      },
+      "response_sha256": "bfa7d4ad03f869b6b88a12d0b63da98859bf723379beff935094c340c1b23207"
+    },
+    {
+      "name": "shapes",
+      "method": "GET",
+      "path": "/api/shapes",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "shape_ids": [
+          "TQ",
+          "HT",
+          "HTC",
+          "HBH",
+          "HCN",
+          "HTHOI",
+          "HV"
+        ]
+      },
+      "response_sha256": "d65bdf749d0ffe6faaea65f99d6353e6b889ac28ad0ffee2b35651af3107e0a2"
+    },
+    {
+      "name": "square_detail",
+      "method": "GET",
+      "path": "/api/shapes/HV",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "shape_id": "HV",
+        "parents": 2,
+        "ancestors": 4,
+        "effective_properties": 12
+      },
+      "response_sha256": "40c4799b1d2c2ccaefb1cfb8902503ad45ca9520285e33a7fe20264958f8afee"
+    },
+    {
+      "name": "properties",
+      "method": "GET",
+      "path": "/api/shapes/HV/properties",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "count": 12,
+        "diagonals_equal_declared_at": "HCN"
+      },
+      "response_sha256": "c97a31fc75b7dcba03d2efabec98e01efc8c619eef9b8bf7efd18da632020b27"
+    },
+    {
+      "name": "conditions",
+      "method": "GET",
+      "path": "/api/shapes/HV/conditions",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "conditions": 5,
+        "combination": "OR",
+        "rule_logic": "AND"
+      },
+      "response_sha256": "d0f58aa5e8a9fa78d2600d724ea1d95e72c12a05886b3c84c83f2e14c9d1f4a7"
+    },
+    {
+      "name": "ancestors",
+      "method": "GET",
+      "path": "/api/shapes/HV/ancestors",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "shape_ids": [
+          "HBH",
+          "HCN",
+          "HTHOI",
+          "TQ"
+        ]
+      },
+      "response_sha256": "363366cf4408e965ad6de89719ee6597ba0925c04c5fc1b2f510a24ec7b4e634"
+    },
+    {
+      "name": "search_Hình vuông",
+      "method": "GET",
+      "path": "/api/search?q=H%C3%ACnh+vu%C3%B4ng",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "shape_ids": [
+          "HV"
+        ]
+      },
+      "response_sha256": "166052c337bbd96987aec883ad56c20457094bbd6db01d2a2faddc2222ba2613"
+    },
+    {
+      "name": "search_hình vuông",
+      "method": "GET",
+      "path": "/api/search?q=h%C3%ACnh+vu%C3%B4ng",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "shape_ids": [
+          "HV"
+        ]
+      },
+      "response_sha256": "166052c337bbd96987aec883ad56c20457094bbd6db01d2a2faddc2222ba2613"
+    },
+    {
+      "name": "search_hinh vuong",
+      "method": "GET",
+      "path": "/api/search?q=hinh+vuong",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "shape_ids": [
+          "HV"
+        ]
+      },
+      "response_sha256": "166052c337bbd96987aec883ad56c20457094bbd6db01d2a2faddc2222ba2613"
+    },
+    {
+      "name": "search_HINH VUONG",
+      "method": "GET",
+      "path": "/api/search?q=HINH+VUONG",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "shape_ids": [
+          "HV"
+        ]
+      },
+      "response_sha256": "166052c337bbd96987aec883ad56c20457094bbd6db01d2a2faddc2222ba2613"
+    },
+    {
+      "name": "search_VUONG",
+      "method": "GET",
+      "path": "/api/search?q=VUONG",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "shape_ids": [
+          "HV"
+        ]
+      },
+      "response_sha256": "35af8eaaf6ce71d12ad99a57df3df00f51f45ed7e3115f799d2e79260e7a549c"
+    },
+    {
+      "name": "search_vuong",
+      "method": "GET",
+      "path": "/api/search?q=vuong",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "shape_ids": [
+          "HV"
+        ]
+      },
+      "response_sha256": "35af8eaaf6ce71d12ad99a57df3df00f51f45ed7e3115f799d2e79260e7a549c"
+    },
+    {
+      "name": "taxonomy",
+      "method": "GET",
+      "path": "/api/graph/taxonomy",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "nodes": 7,
+        "relationships": 7
+      },
+      "response_sha256": "96ecd3304c56158128b8e33b99f89af3663b84c480551086622afbb01437de6f"
+    },
+    {
+      "name": "neighborhood_1",
+      "method": "GET",
+      "path": "/api/graph/neighborhood/HV?depth=1",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "nodes": 8,
+        "relationships": 11
+      },
+      "response_sha256": "a5f47d26dad2ffaab7eed4e52423fe1543471f057558bfe7f885065d234853ca"
+    },
+    {
+      "name": "neighborhood_2",
+      "method": "GET",
+      "path": "/api/graph/neighborhood/HV?depth=2",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "nodes": 23,
+        "relationships": 43
+      },
+      "response_sha256": "2d110232318f7ba9ae3e8725ea1f752d92a473bf4ece45726d56ee54420566d7"
+    },
+    {
+      "name": "neighborhood_3",
+      "method": "GET",
+      "path": "/api/graph/neighborhood/HV?depth=3",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "nodes": 39,
+        "relationships": 71
+      },
+      "response_sha256": "563a08216dcc3ef5b65bd4273f1c3960823414ee1448ef657b85ff95e7776115"
+    },
+    {
+      "name": "query_catalog",
+      "method": "GET",
+      "path": "/api/queries",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "query_ids": [
+          "Q01",
+          "Q02",
+          "Q03",
+          "Q04",
+          "Q05",
+          "Q06",
+          "Q07",
+          "Q08",
+          "Q09",
+          "Q10",
+          "Q11",
+          "Q12",
+          "Q13",
+          "Q14",
+          "Q15"
+        ]
+      },
+      "response_sha256": "a7a083caeda2a3bd20453b4116c28eadea63db9a387f4c31f58c91903978931a"
+    },
+    {
+      "name": "Q01",
+      "method": "GET",
+      "path": "/api/queries/Q01",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "query_id": "Q01",
+        "rows": 1,
+        "expected_matched": true
+      },
+      "response_sha256": "f18e3bf365fd935f10dae11b329865f8d900a6c238e6bb54fed673d9f7f257c0"
+    },
+    {
+      "name": "Q02",
+      "method": "GET",
+      "path": "/api/queries/Q02",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "query_id": "Q02",
+        "rows": 12,
+        "expected_matched": true
+      },
+      "response_sha256": "648c4d0867779ebc84f73488148207ba98cd098387f8b94724683137c88cb33c"
+    },
+    {
+      "name": "Q03",
+      "method": "GET",
+      "path": "/api/queries/Q03",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "query_id": "Q03",
+        "rows": 2,
+        "expected_matched": true
+      },
+      "response_sha256": "62b10fcee10fbe3eb4e7db6c8abc8408d5808b015dba3eb0ee21ee18a3123880"
+    },
+    {
+      "name": "Q04",
+      "method": "GET",
+      "path": "/api/queries/Q04",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "query_id": "Q04",
+        "rows": 4,
+        "expected_matched": true
+      },
+      "response_sha256": "b7c6e157b21bd3bc0db2f033f140bd81400f8045e652f13023a862ad58079b94"
+    },
+    {
+      "name": "Q05",
+      "method": "GET",
+      "path": "/api/queries/Q05",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "query_id": "Q05",
+        "rows": 3,
+        "expected_matched": true
+      },
+      "response_sha256": "08f0c9fc607c777d5fb739cd41005c7a6b0be93b2d9e42a5cc6f9db5b2033503"
+    },
+    {
+      "name": "Q06",
+      "method": "GET",
+      "path": "/api/queries/Q06",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "query_id": "Q06",
+        "rows": 2,
+        "expected_matched": true
+      },
+      "response_sha256": "5dafcde78636792bd083bf37963bd6b27956ecd79f9a7cc3ed64f5c91361fdf3"
+    },
+    {
+      "name": "Q07",
+      "method": "GET",
+      "path": "/api/queries/Q07",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "query_id": "Q07",
+        "rows": 2,
+        "expected_matched": true
+      },
+      "response_sha256": "bb85caf6922a1b6cd72163f5bfd96ea2044f0be17c4d4e9e9c53537c2b43ae5c"
+    },
+    {
+      "name": "Q08",
+      "method": "GET",
+      "path": "/api/queries/Q08",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "query_id": "Q08",
+        "rows": 3,
+        "expected_matched": true
+      },
+      "response_sha256": "d3eddefe9610a0b680a00d1b552d78eff7d6a5bb5b03444aaed265bc8257463b"
+    },
+    {
+      "name": "Q09",
+      "method": "GET",
+      "path": "/api/queries/Q09",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "query_id": "Q09",
+        "rows": 2,
+        "expected_matched": true
+      },
+      "response_sha256": "80d3d44a6ced3d150f31e64db9d41dc7028f755bf3b54cd1c638269a92ba724c"
+    },
+    {
+      "name": "Q10",
+      "method": "GET",
+      "path": "/api/queries/Q10",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "query_id": "Q10",
+        "rows": 9,
+        "expected_matched": true
+      },
+      "response_sha256": "0aecee4cd39122880d80eb9eb9d6ceafef1313df826442d6903cdee64920ca3f"
+    },
+    {
+      "name": "Q11",
+      "method": "GET",
+      "path": "/api/queries/Q11",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "query_id": "Q11",
+        "rows": 10,
+        "expected_matched": true
+      },
+      "response_sha256": "0af3f368be5e7de839b772705d678e373144688809c5d12934cb3dcf7d821149"
+    },
+    {
+      "name": "Q12",
+      "method": "GET",
+      "path": "/api/queries/Q12",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "query_id": "Q12",
+        "rows": 2,
+        "expected_matched": true
+      },
+      "response_sha256": "9faac1bbfd06ccc57866c9490b0a1d1358c83351549cbf6dbc85b3b834041e84"
+    },
+    {
+      "name": "Q13",
+      "method": "GET",
+      "path": "/api/queries/Q13",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "query_id": "Q13",
+        "rows": 7,
+        "expected_matched": true
+      },
+      "response_sha256": "991b69180952560c25eed6248028c956c55b1417720e574c0abe4e8bf01b5570"
+    },
+    {
+      "name": "Q14",
+      "method": "GET",
+      "path": "/api/queries/Q14",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "query_id": "Q14",
+        "rows": 1,
+        "expected_matched": true
+      },
+      "response_sha256": "ff499d55dbd0e9c00469097098593abe905922e5142640e957437e243d5583e7"
+    },
+    {
+      "name": "Q15",
+      "method": "GET",
+      "path": "/api/queries/Q15",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "query_id": "Q15",
+        "rows": 2,
+        "expected_matched": true
+      },
+      "response_sha256": "0c35f682f90420407d0f41ac6e9cd9f3ee484a6a9cd5e51daed1f17f6e187adb"
+    },
+    {
+      "name": "query_post",
+      "method": "POST",
+      "path": "/api/queries/Q14",
+      "http_status": 200,
+      "status": "PASS",
+      "evidence": {
+        "nodes": 23,
+        "relationships": 43
+      },
+      "response_sha256": "878831431765851b86d800faad27174351ed2703b10d73a89634a2018772378b"
+    },
+    {
+      "name": "missing_shape",
+      "method": "GET",
+      "path": "/api/shapes/UNKNOWN",
+      "http_status": 404,
+      "status": "PASS",
+      "evidence": {
+        "error_code": "SHAPE_NOT_FOUND"
+      },
+      "response_sha256": "53e5952222ffb290d816aa109d5fc7122c71f4571f2d2c3cf915a63a9e9b8cda"
+    },
+    {
+      "name": "missing_query",
+      "method": "GET",
+      "path": "/api/queries/Q99",
+      "http_status": 404,
+      "status": "PASS",
+      "evidence": {
+        "error_code": "QUERY_NOT_FOUND"
+      },
+      "response_sha256": "d2579ca63e35c615f0a70c24ec8490d9ad3568b45577ddc3d4d6d464b2cf3de9"
+    },
+    {
+      "name": "depth_0",
+      "method": "GET",
+      "path": "/api/graph/neighborhood/HV?depth=0",
+      "http_status": 400,
+      "status": "PASS",
+      "evidence": {
+        "error_code": "INVALID_PARAMETER"
+      },
+      "response_sha256": "b565ddd2f8f73180243310d74f6d0bd1a5821d88960f5a806aaf7414fd93dcb1"
+    },
+    {
+      "name": "depth_4",
+      "method": "GET",
+      "path": "/api/graph/neighborhood/HV?depth=4",
+      "http_status": 400,
+      "status": "PASS",
+      "evidence": {
+        "error_code": "INVALID_PARAMETER"
+      },
+      "response_sha256": "b565ddd2f8f73180243310d74f6d0bd1a5821d88960f5a806aaf7414fd93dcb1"
+    },
+    {
+      "name": "empty_search",
+      "method": "GET",
+      "path": "/api/search?q=",
+      "http_status": 400,
+      "status": "PASS",
+      "evidence": {
+        "error_code": "EMPTY_SEARCH"
+      },
+      "response_sha256": "ad6eadebede290cbb59948b06866ee36b8b5d84265df4d50ef96ba34ce54fe99"
+    },
+    {
+      "name": "dataset_override",
+      "method": "GET",
+      "path": "/api/queries/Q06?dataset=other",
+      "http_status": 400,
+      "status": "PASS",
+      "evidence": {
+        "error_code": "UNKNOWN_PARAMETER"
+      },
+      "response_sha256": "60cfc9ed2d9967cc6913450efb1b7fe7f03c5b0810594cb3565e8a909e1a4d0b"
+    },
+    {
+      "name": "arbitrary_cypher_rejected",
+      "method": "POST",
+      "path": "/api/queries/Q14",
+      "http_status": 400,
+      "status": "PASS",
+      "evidence": {
+        "error_code": "UNKNOWN_PARAMETER"
+      },
+      "response_sha256": "60cfc9ed2d9967cc6913450efb1b7fe7f03c5b0810594cb3565e8a909e1a4d0b"
+    }
+  ],
+  "passed": 41,
+  "failed": 0
+}

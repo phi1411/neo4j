@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-06T17:33:01.719Z",
+  "base_url": "http://127.0.0.1:5000",
+  "checks": [
+    {
+      "name": "shapes_list",
+      "status": "PASS",
+      "evidence": "7 loại hình sau tải lại"
+    },
+    {
+      "name": "search_hinh_vuong",
+      "status": "PASS",
+      "evidence": "1 kết quả HV"
+    },
+    {
+      "name": "square_detail",
+      "status": "PASS",
+      "evidence": "Hai cha HCN/HTHOI; 12 tính chất; 5 Condition"
+    },
+    {
+      "name": "detail_graph_depth1",
+      "status": "PASS",
+      "evidence": "8 node / 11 relationship"
+    },
+    {
+      "name": "graph_page_depth1",
+      "status": "PASS",
+      "evidence": "8 node / 11 relationship, canvas hiện"
+    },
+    {
+      "name": "graph_taxonomy",
+      "status": "PASS",
+      "evidence": "7 node / 7 IS_A"
+    },
+    {
+      "name": "Q06_UI",
+      "status": "PASS",
+      "evidence": "HTHOI, HV; 2 dòng"
+    },
+    {
+      "name": "Q09_UI",
+      "status": "PASS",
+      "evidence": "TQ–HBH–HCN–HV và TQ–HBH–HTHOI–HV; mỗi đường 3 cạnh"
+    },
+    {
+      "name": "Q15_UI",
+      "status": "PASS",
+      "evidence": "2 đường giải thích qua HCN/HTHOI tới HBH và Property"
+    },
+    {
+      "name": "dashboard",
+      "status": "PASS",
+      "evidence": "7 Shape, 19 Property, 18 Condition; 44/79 và taxonomy 7/7"
+    },
+    {
+      "name": "console_errors",
+      "status": "PASS",
+      "evidence": "Không có console error ghi nhận trong tab kiểm tra"
+    }
+  ],
+  "normal_console_errors": [],
+  "screenshot": "docs/images/phase7/01_final_Q15.jpg"
+}

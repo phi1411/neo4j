@@ -1,0 +1,9 @@
+[
+  {"id":"TQ","name":"Tứ giác","definition":"Đa giác lồi, không suy biến có bốn cạnh trong mặt phẳng.","search_name":"tu giac","display_order":1,"source_ref":"https://mathworld.wolfram.com/Quadrilateral.html"},
+  {"id":"HT","name":"Hình thang","definition":"Tứ giác có đúng một cặp cạnh đối song song, theo quy ước phân loại loại trừ của project.","search_name":"hinh thang","display_order":2,"source_ref":"project:docs/PHASE_1_PHAN_TICH.md#2"},
+  {"id":"HTC","name":"Hình thang cân","definition":"Hình thang có hai góc kề một đáy bằng nhau.","search_name":"hinh thang can","display_order":3,"source_ref":"https://mathworld.wolfram.com/IsoscelesTrapezoid.html"},
+  {"id":"HBH","name":"Hình bình hành","definition":"Tứ giác có hai cặp cạnh đối song song.","search_name":"hinh binh hanh","display_order":4,"source_ref":"https://mathworld.wolfram.com/Parallelogram.html"},
+  {"id":"HCN","name":"Hình chữ nhật","definition":"Tứ giác có bốn góc vuông; bao gồm trường hợp đặc biệt là hình vuông.","search_name":"hinh chu nhat","display_order":5,"source_ref":"https://mathworld.wolfram.com/Rectangle.html"},
+  {"id":"HTHOI","name":"Hình thoi","definition":"Tứ giác có bốn cạnh bằng nhau; bao gồm trường hợp đặc biệt là hình vuông.","search_name":"hinh thoi","display_order":6,"source_ref":"https://mathworld.wolfram.com/Rhombus.html"},
+  {"id":"HV","name":"Hình vuông","definition":"Tứ giác có bốn cạnh bằng nhau và bốn góc vuông.","search_name":"hinh vuong","display_order":7,"source_ref":"https://mathworld.wolfram.com/Square.html"}
+]

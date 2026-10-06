@@ -1,0 +1,15 @@
+{% macro graph_panel(id, heading='Graph tri thức') %}
+<section class="panel graph-panel" id="{{ id }}">
+  <div class="panel-heading"><h2>{{ heading }}</h2><button class="button subtle graph-fit" type="button" disabled>Vừa khung</button></div>
+  <div class="graph-status state" role="status" aria-live="polite">Đang tải graph…</div>
+  <div class="graph-layout">
+    <div class="network" role="region" aria-label="{{ heading }}; có thể kéo để di chuyển và cuộn để thu phóng"></div>
+    <aside class="graph-inspector" aria-label="Thông tin node hoặc relationship">
+      <label>Chọn node để xem thông tin<select class="node-picker" disabled><option value="">Chưa có dữ liệu</option></select></label>
+      <div class="graph-selection"><p class="muted">Bấm một node hoặc cạnh trên graph để xem nội dung.</p></div>
+    </aside>
+  </div>
+  <div class="legend"><span><i class="shape-dot"></i>Shape · Loại hình</span><span><i class="property-dot"></i>Property · Tính chất</span><span><i class="condition-dot"></i>Condition · Dấu hiệu</span></div>
+  <p class="graph-hint muted">Mũi tên theo chiều relationship. Kéo nền để di chuyển, cuộn hoặc chụm để thu phóng. Danh sách node hỗ trợ xem bằng bàn phím.</p>
+</section>
+{% endmacro %}

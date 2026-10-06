@@ -1,0 +1,767 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-06T16:53:58.129Z",
+  "transport": "real browser UI, local Flask and Neo4j",
+  "checks": [
+    {
+      "name": "dashboard_stats",
+      "status": "PASS",
+      "evidence": "7\nShape · Loại hình\n19\nProperty · Tính chất\n18\nCondition · Dấu hiệu\n44\nTổng node\n79\nTổng relationship"
+    },
+    {
+      "name": "HV_route",
+      "status": "PASS",
+      "evidence": "http://127.0.0.1:5000/shapes/HV"
+    },
+    {
+      "name": "HV_parents_match_live_Neo4j",
+      "status": "PASS",
+      "evidence": [
+        "HCN",
+        "HTHOI"
+      ]
+    },
+    {
+      "name": "HV_ancestors_match_live_Neo4j",
+      "status": "PASS",
+      "evidence": [
+        "HBH",
+        "HCN",
+        "HTHOI",
+        "TQ"
+      ]
+    },
+    {
+      "name": "HV_12_properties_no_duplicates",
+      "status": "PASS",
+      "evidence": 12
+    },
+    {
+      "name": "property_source_ADJACENT_ANGLES_SUPPLEMENTARY",
+      "status": "PASS",
+      "evidence": [
+        "HBH"
+      ]
+    },
+    {
+      "name": "property_source_ANGLE_SUM_360",
+      "status": "PASS",
+      "evidence": [
+        "TQ"
+      ]
+    },
+    {
+      "name": "property_source_DIAGONALS_BISECT_ANGLES",
+      "status": "PASS",
+      "evidence": [
+        "HTHOI"
+      ]
+    },
+    {
+      "name": "property_source_DIAGONALS_BISECT_EACH_OTHER",
+      "status": "PASS",
+      "evidence": [
+        "HBH"
+      ]
+    },
+    {
+      "name": "property_source_DIAGONALS_EQUAL",
+      "status": "PASS",
+      "evidence": [
+        "HCN"
+      ]
+    },
+    {
+      "name": "property_source_DIAGONALS_PERPENDICULAR",
+      "status": "PASS",
+      "evidence": [
+        "HTHOI"
+      ]
+    },
+    {
+      "name": "property_source_FOUR_EQUAL_SIDES",
+      "status": "PASS",
+      "evidence": [
+        "HTHOI"
+      ]
+    },
+    {
+      "name": "property_source_FOUR_RIGHT_ANGLES",
+      "status": "PASS",
+      "evidence": [
+        "HCN"
+      ]
+    },
+    {
+      "name": "property_source_FOUR_SIDES",
+      "status": "PASS",
+      "evidence": [
+        "TQ"
+      ]
+    },
+    {
+      "name": "property_source_OPPOSITE_ANGLES_EQUAL",
+      "status": "PASS",
+      "evidence": [
+        "HBH"
+      ]
+    },
+    {
+      "name": "property_source_OPPOSITE_SIDES_EQUAL",
+      "status": "PASS",
+      "evidence": [
+        "HBH"
+      ]
+    },
+    {
+      "name": "property_source_TWO_PARALLEL_PAIRS",
+      "status": "PASS",
+      "evidence": [
+        "HBH"
+      ]
+    },
+    {
+      "name": "five_conditions_OR",
+      "status": "PASS",
+      "evidence": [
+        {
+          "and": 1,
+          "id": "C_HV_01",
+          "terms": [
+            "Hình chữ nhật",
+            "Có một cặp cạnh kề bằng nhau"
+          ]
+        },
+        {
+          "and": 1,
+          "id": "C_HV_02",
+          "terms": [
+            "Hình chữ nhật",
+            "Hai đường chéo vuông góc"
+          ]
+        },
+        {
+          "and": 1,
+          "id": "C_HV_03",
+          "terms": [
+            "Hình thoi",
+            "Có ít nhất một góc vuông"
+          ]
+        },
+        {
+          "and": 1,
+          "id": "C_HV_04",
+          "terms": [
+            "Hình thoi",
+            "Hai đường chéo bằng nhau"
+          ]
+        },
+        {
+          "and": 2,
+          "id": "C_HV_05",
+          "terms": [
+            "Tứ giác",
+            "Có bốn cạnh bằng nhau",
+            "Có bốn góc vuông"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "C_HV_01_AND",
+      "status": "PASS",
+      "evidence": {
+        "and": 1,
+        "id": "C_HV_01",
+        "terms": [
+          "Hình chữ nhật",
+          "Có một cặp cạnh kề bằng nhau"
+        ]
+      }
+    },
+    {
+      "name": "C_HV_02_AND",
+      "status": "PASS",
+      "evidence": {
+        "and": 1,
+        "id": "C_HV_02",
+        "terms": [
+          "Hình chữ nhật",
+          "Hai đường chéo vuông góc"
+        ]
+      }
+    },
+    {
+      "name": "C_HV_03_AND",
+      "status": "PASS",
+      "evidence": {
+        "and": 1,
+        "id": "C_HV_03",
+        "terms": [
+          "Hình thoi",
+          "Có ít nhất một góc vuông"
+        ]
+      }
+    },
+    {
+      "name": "C_HV_04_AND",
+      "status": "PASS",
+      "evidence": {
+        "and": 1,
+        "id": "C_HV_04",
+        "terms": [
+          "Hình thoi",
+          "Hai đường chéo bằng nhau"
+        ]
+      }
+    },
+    {
+      "name": "C_HV_05_AND",
+      "status": "PASS",
+      "evidence": {
+        "and": 2,
+        "id": "C_HV_05",
+        "terms": [
+          "Tứ giác",
+          "Có bốn cạnh bằng nhau",
+          "Có bốn góc vuông"
+        ]
+      }
+    },
+    {
+      "name": "bisect_two_inheritance_paths",
+      "status": "PASS",
+      "evidence": "Hình vuông → Hình chữ nhật → Hình bình hành → Hai đường chéo chia đôi nhau\nHình vuông → Hình thoi → Hình bình hành → Hai đường chéo chia đôi nhau"
+    },
+    {
+      "name": "detail_graph_8_11",
+      "status": "PASS",
+      "evidence": "8/11"
+    },
+    {
+      "name": "shapes_seven",
+      "status": "PASS",
+      "evidence": 7
+    },
+    {
+      "name": "search_UI_\"Hình vuông\"",
+      "status": "PASS",
+      "evidence": {
+        "ids": [
+          "HV"
+        ],
+        "state": "1 loại hình phù hợp với “Hình vuông”."
+      }
+    },
+    {
+      "name": "search_UI_\"hình vuông\"",
+      "status": "PASS",
+      "evidence": {
+        "ids": [
+          "HV"
+        ],
+        "state": "1 loại hình phù hợp với “hình vuông”."
+      }
+    },
+    {
+      "name": "search_UI_\"hinh vuong\"",
+      "status": "PASS",
+      "evidence": {
+        "ids": [
+          "HV"
+        ],
+        "state": "1 loại hình phù hợp với “hinh vuong”."
+      }
+    },
+    {
+      "name": "search_UI_\"HINH VUONG\"",
+      "status": "PASS",
+      "evidence": {
+        "ids": [
+          "HV"
+        ],
+        "state": "1 loại hình phù hợp với “HINH VUONG”."
+      }
+    },
+    {
+      "name": "search_UI_\"VUONG\"",
+      "status": "PASS",
+      "evidence": {
+        "ids": [
+          "HV"
+        ],
+        "state": "1 loại hình phù hợp với “VUONG”."
+      }
+    },
+    {
+      "name": "search_UI_\"vuong\"",
+      "status": "PASS",
+      "evidence": {
+        "ids": [
+          "HV"
+        ],
+        "state": "1 loại hình phù hợp với “vuong”."
+      }
+    },
+    {
+      "name": "search_UI_\"\"",
+      "status": "PASS",
+      "evidence": {
+        "ids": [
+          "TQ",
+          "HT",
+          "HTC",
+          "HBH",
+          "HCN",
+          "HTHOI",
+          "HV"
+        ],
+        "state": "7 loại hình."
+      }
+    },
+    {
+      "name": "search_UI_\"   \"",
+      "status": "PASS",
+      "evidence": {
+        "ids": [
+          "TQ",
+          "HT",
+          "HTC",
+          "HBH",
+          "HCN",
+          "HTHOI",
+          "HV"
+        ],
+        "state": "7 loại hình."
+      }
+    },
+    {
+      "name": "search_UI_\"@#$%\"",
+      "status": "PASS",
+      "evidence": {
+        "ids": [],
+        "state": "Không tìm thấy loại hình với từ khóa “@#$%”."
+      }
+    },
+    {
+      "name": "search_UI_\"khong-co-hinh-nay\"",
+      "status": "PASS",
+      "evidence": {
+        "ids": [],
+        "state": "Không tìm thấy loại hình với từ khóa “khong-co-hinh-nay”."
+      }
+    },
+    {
+      "name": "search_to_detail",
+      "status": "PASS",
+      "evidence": "Hình vuông"
+    },
+    {
+      "name": "graph_depth_1",
+      "status": "PASS",
+      "evidence": {
+        "nodes": "8",
+        "edges": "11"
+      }
+    },
+    {
+      "name": "graph_unique_nodes_1",
+      "status": "PASS",
+      "evidence": 8
+    },
+    {
+      "name": "graph_depth_2",
+      "status": "PASS",
+      "evidence": {
+        "nodes": "23",
+        "edges": "43"
+      }
+    },
+    {
+      "name": "graph_unique_nodes_2",
+      "status": "PASS",
+      "evidence": 23
+    },
+    {
+      "name": "graph_depth_3",
+      "status": "PASS",
+      "evidence": {
+        "nodes": "39",
+        "edges": "71"
+      }
+    },
+    {
+      "name": "graph_unique_nodes_3",
+      "status": "PASS",
+      "evidence": 39
+    },
+    {
+      "name": "property_node_inspector",
+      "status": "PASS",
+      "evidence": "Property\nHai đường chéo bằng nhau\nDIAGONALS_EQUAL\n\nĐộ dài hai đoạn nối các đỉnh đối diện bằng nhau; không tự nó đủ nhận biết hình chữ nhật.\n\nAC = BD"
+    },
+    {
+      "name": "taxonomy_7_7",
+      "status": "PASS",
+      "evidence": "7/7"
+    },
+    {
+      "name": "taxonomy_visual_arrows_labels",
+      "status": "PASS",
+      "evidence": "Ảnh graph thật: HV → HCN/HTHOI, mũi tên hướng tới cha, bảy nhãn IS_A"
+    },
+    {
+      "name": "canvas_click_HV",
+      "status": "PASS",
+      "evidence": "Shape\nHình vuông\nHV\n\nTứ giác có bốn cạnh bằng nhau và bốn góc vuông.\n\nXem chi tiết loại hình →"
+    },
+    {
+      "name": "tooltip_HV_visible",
+      "status": "PASS",
+      "evidence": "Shape · HV Tứ giác có bốn cạnh bằng nhau và bốn góc vuông."
+    },
+    {
+      "name": "canvas_click_IS_A",
+      "status": "PASS",
+      "evidence": "Relationship\nIS_A\n\nHình vuông → Hình chữ nhật\n\nLà trường hợp đặc biệt của loại hình đích."
+    },
+    {
+      "name": "fit_button_active",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "mobile_graph_no_document_overflow",
+      "status": "PASS",
+      "evidence": {
+        "canvas": true,
+        "scrollWidth": 375,
+        "width": 390
+      }
+    },
+    {
+      "name": "query_catalog_15",
+      "status": "PASS",
+      "evidence": 15
+    },
+    {
+      "name": "Q06_clears_previous",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "Q06_UI_expected",
+      "status": "PASS",
+      "evidence": {
+        "table": {
+          "columns": [
+            "shape_id",
+            "shape_name"
+          ],
+          "rows": [
+            [
+              "HTHOI",
+              "Hình thoi"
+            ],
+            [
+              "HV",
+              "Hình vuông"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Q06_real_success",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "Q07_clears_previous",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "Q07_UI_expected",
+      "status": "PASS",
+      "evidence": {
+        "table": {
+          "columns": [
+            "shape_id",
+            "shape_name"
+          ],
+          "rows": [
+            [
+              "HCN",
+              "Hình chữ nhật"
+            ],
+            [
+              "HV",
+              "Hình vuông"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Q07_real_success",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "Q08_clears_previous",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "Q08_UI_expected",
+      "status": "PASS",
+      "evidence": {
+        "table": {
+          "columns": [
+            "shape_id",
+            "shape_name"
+          ],
+          "rows": [
+            [
+              "HCN",
+              "Hình chữ nhật"
+            ],
+            [
+              "HTC",
+              "Hình thang cân"
+            ],
+            [
+              "HV",
+              "Hình vuông"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Q08_real_success",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "Q09_clears_previous",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "Q09_UI_expected",
+      "status": "PASS",
+      "evidence": {
+        "table": {
+          "columns": [
+            "edge_count",
+            "node_ids",
+            "path"
+          ],
+          "rows": [
+            [
+              "3",
+              "TQ → HBH → HCN → HV",
+              "Tứ giác → Hình bình hành → Hình chữ nhật → Hình vuông"
+            ],
+            [
+              "3",
+              "TQ → HBH → HTHOI → HV",
+              "Tứ giác → Hình bình hành → Hình thoi → Hình vuông"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Q09_real_success",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "Q09_graph_ready",
+      "status": "PASS",
+      "evidence": {
+        "nodes": "5",
+        "edges": "5"
+      }
+    },
+    {
+      "name": "Q15_clears_previous",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "Q15_UI_expected",
+      "status": "PASS",
+      "evidence": {
+        "table": {
+          "columns": [
+            "declared_at",
+            "node_ids",
+            "path"
+          ],
+          "rows": [
+            [
+              "HBH",
+              "HV → HCN → HBH → DIAGONALS_BISECT_EACH_OTHER",
+              "Hình vuông → Hình chữ nhật → Hình bình hành → Hai đường chéo chia đôi nhau"
+            ],
+            [
+              "HBH",
+              "HV → HTHOI → HBH → DIAGONALS_BISECT_EACH_OTHER",
+              "Hình vuông → Hình thoi → Hình bình hành → Hai đường chéo chia đôi nhau"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Q15_real_success",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "Q15_graph_ready",
+      "status": "PASS",
+      "evidence": {
+        "nodes": "5",
+        "edges": "5"
+      }
+    },
+    {
+      "name": "Neo4j_Browser_connected_quadrilateral",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "Neo4j_Browser_taxonomy_7_7",
+      "status": "PASS",
+      "evidence": "7 nodes / 7 IS_A"
+    },
+    {
+      "name": "Neo4j_Browser_equal_sides_result",
+      "status": "PASS",
+      "evidence": "shape_id\nname\n1\n\"HTHOI\"\n\"Hình thoi\"\n2\n\"HV\"\n\"Hình vuông\""
+    },
+    {
+      "name": "unavailable_UI_safe",
+      "status": "PASS",
+      "evidence": "Driver thật đến cổng không listen; không tắt Neo4j project"
+    },
+    {
+      "name": "fresh_start_dashboard_connected",
+      "status": "PASS",
+      "evidence": "7\nShape · Loại hình\n19\nProperty · Tính chất\n18\nCondition · Dấu hiệu\n44\nTổng node\n79\nTổng relationship"
+    },
+    {
+      "name": "fresh_start_real_detail_graph",
+      "status": "PASS",
+      "evidence": "12 tính chất · 0 trực tiếp"
+    },
+    {
+      "name": "fresh_start_no_console_error",
+      "status": "PASS",
+      "evidence": []
+    },
+    {
+      "name": "missing_shape_UI_controlled",
+      "status": "PASS",
+      "evidence": "Không tìm thấy loại hình này."
+    },
+    {
+      "name": "normal_UI_no_console_errors",
+      "status": "PASS",
+      "evidence": []
+    }
+  ],
+  "passed": 78,
+  "failed": 0,
+  "normal_console_errors": [],
+  "screenshots": [
+    {
+      "file": "docs/images/phase5/01_dashboard.jpg",
+      "bytes": 80151
+    },
+    {
+      "file": "docs/images/phase5/02_taxonomy_graph.jpg",
+      "bytes": 71399
+    },
+    {
+      "file": "docs/images/phase5/04_shape_hv_overview.jpg",
+      "bytes": 62701
+    },
+    {
+      "file": "docs/images/phase5/05_shape_hv_properties.jpg",
+      "bytes": 67979
+    },
+    {
+      "file": "docs/images/phase5/06_shape_hv_conditions.jpg",
+      "bytes": 79821
+    },
+    {
+      "file": "docs/images/phase5/03_shapes.jpg",
+      "bytes": 77993
+    },
+    {
+      "file": "docs/images/phase5/07_graph_depth1.jpg",
+      "bytes": 66369
+    },
+    {
+      "file": "docs/images/phase5/08_graph_depth2.jpg",
+      "bytes": 72637
+    },
+    {
+      "file": "docs/images/phase5/08_graph_depth3.jpg",
+      "bytes": 74920
+    },
+    {
+      "file": "docs/images/phase5/15_graph_tooltip.jpg",
+      "bytes": 78563
+    },
+    {
+      "file": "docs/images/phase5/16_mobile_graph.jpg",
+      "bytes": 38489
+    },
+    {
+      "file": "docs/images/phase5/09_queries_list.jpg",
+      "bytes": 78411
+    },
+    {
+      "file": "docs/images/phase5/10_query_Q06.jpg",
+      "bytes": 75454
+    },
+    {
+      "file": "docs/images/phase5/query_Q07.jpg",
+      "bytes": 73109
+    },
+    {
+      "file": "docs/images/phase5/query_Q08.jpg",
+      "bytes": 77805
+    },
+    {
+      "file": "docs/images/phase5/11_query_Q09.jpg",
+      "bytes": 84683
+    },
+    {
+      "file": "docs/images/phase5/12_query_Q15.jpg",
+      "bytes": 90197
+    },
+    {
+      "file": "docs/images/phase5/12_query_Q15_graph.jpg",
+      "bytes": 64741
+    },
+    {
+      "file": "docs/images/phase5/13_neo4j_graph.jpg",
+      "bytes": 18111
+    },
+    {
+      "file": "docs/images/phase5/14_neo4j_query.jpg",
+      "bytes": 49286
+    },
+    {
+      "file": "docs/images/phase5/17_neo4j_unavailable.jpg"
+    }
+  ]
+}
